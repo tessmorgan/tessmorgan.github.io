@@ -42,3 +42,8 @@ body {
     ul li a:hover{
         background-color: rgb(15, 56, 179);
     }
+
+    .smallright{
+        font-size: 20px;
+        float: right;
+    }
