@@ -1,0 +1,44 @@
+.container{
+    margin: 20px 50px;
+    padding: 50px;
+    border: 1px solid black;
+    background-color: white;
+    }
+
+body {
+    background-image: url(https://wallpapershome.com/images/pages/pic_h/6592.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(113, 136, 211);
+        color: aliceblue;
+    }
+    
+    ul li{
+        float: left;
+        border-right: 1px solid rgb(6, 6, 6);
+    }
+
+    li:last-child {
+        border-right: none;
+      }
+    
+    ul li a{
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: large;
+        color: aliceblue;
+    }
+    
+    ul li a:hover{
+        background-color: rgb(15, 56, 179);
+    }
