@@ -81,7 +81,7 @@ padding: 20px;
 .sidenav2 {
     grid-column: 3;
     grid-row: 3 / span 3;
-    background-color: darkgray;
+    background-color: rgb(126, 125, 125);
 }
 
 .footer {
