@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+    <style>
+        #myDiv {
+  border: thick solid blue;
+}
+    </style>
+</head>
+<body>
+    <h1>Let's learn JavaScript!</h1>
+    <h2>How do we do onclick events and alerts?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('Warning! You are navigating away from my page!')">School Website</a>
+
+    <hr>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana nana, Batman!'">Reveal!</button>
+    <h2>Two truths and a lie</h2>
+    <p>Which one is the lie?</p>
+    <ol>
+        <li>I have the same birthday as Ted Bundy</li>
+        <li>My real name is Teresa</li>
+        <li>I am named after a movie character</li>
+    </ol>
+    <p id="lie"></p>
+    <button onclick="document.getElementById('lie').innerHTML='My real name is NOT Teresa'; document.getElementById('lie').style.display= 'block'">Reveal!</button>
+    <button onclick="document.getElementById('lie').style.display='none'">Hide!</button>
+
+    <hr>
+    <h2>How do we change images with JavaScript?</h2>
+    <img src="images/switchoff.png" alt="Switch off" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/switchon.png'">Turn on Switch</button>
+    <button onclick="document.getElementById('my-image').src='images/switchoff.png'">Turn off Switch</button>
+
+    <hr>
+    <h2>How do I change CSS styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake: Eat Me!</button>
+    <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='40px'">Potion: Drink Me!</button>
+    <button onclick="normalAlice();">Return to Normal</button>
+
+    <hr>
+    <button onclick="askName();">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <hr>
+
+    <p id="bold">This is a paragraph.</p>
+
+<button type="button" onclick="myBold();">Make me Bold!</button>
+<p id="boldtext"></p>
+<button onclick="normalbold();">Return to Normal</button>
+
+<hr>
+    <div id="myDiv">This is a div.</div>
+    <br>
+    <button type="button" onclick="myFunction()">Change color of my border!</button>
+    <button type="button" onclick="myBunction()">Change it back!</button>
+
+
+
+    <script>
+        function normalAlice(){
+            let aliceParagraph = document.getElementById('alice');
+            aliceParagraph.style.color = 'black';
+            aliceParagraph.style.fontSize= '20px';
+        }
+    
+        function askName(){
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt("What is your name?");
+            //decide what to do
+            if (name ==="batman") {
+                nameParagraph.innerHTML = "Welcome to the Batcave sir";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name +"! Nice to meet you."
+            }
+        }
+        function myBold() {
+        let boldParagraph = document.getElementById("bold").style.fontWeight = "900";
+        }
+
+        function normalbold(){
+            let boldParagraph = document.getElementById('bold');
+            boldParagraph.style.color = 'black';
+            boldParagraph.style.fontSize= '16px';
+            boldParagraph.style.fontWeight = "400";
+        }
+
+        function myFunction() {
+    document.getElementById("myDiv").style.borderColor = "red";
+        }
+
+        function myBunction() {
+    document.getElementById("myDiv").style.borderColor = "blue";
+        }
+    </script>
+    
+</body>
+</html>
