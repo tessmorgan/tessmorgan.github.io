@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildlife</title>
+    <style>
+        ul.nav li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.nav li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            background-color: darkred;
+            border: 3px solid black;
+            border-bottom-width: 1.5px;
+            border-top-width: 1.5px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgba(93, 4, 4, 0.696);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        ul.nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkred;
+            border: 3px solid black;
+        }
+
+        ul.nav li {
+            float: left;
+        }
+
+        ul.nav li a {
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: large;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        ul.nav li a:hover {
+            background-color: rgba(93, 4, 4, 0.696);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Wildlife</a>
+                <div class="dropdown-content">
+                    <a href="aquatic-wildlife.html">Aquatic Wildlife</a>
+                    <a href="land-wildlife.html">Land Wildlife</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Air</a>
+                <div class="dropdown-content">
+                    <a href="wildfire.html">Wildfires</a>
+                    <a href="exhaust.html">Exhaust</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Waste</a>
+                <div class="dropdown-content">
+                    <a href="compost.html">Compost</a>
+                    <a href="recycle.html">Recycle</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a class="dropbtn">Action</a>
+                <div class="dropdown-content">
+                    <a href="government.html">Government Action</a>
+                    <a href="personal.html">Personal Action</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

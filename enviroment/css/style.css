@@ -1,1 +1,18 @@
 /* Things in external: background/body, nav bar, footer, buttons, table */
+/* Font we are using: ___*/
+/* H1 using:___ H2 using:___ Para using:___*/
+
+body {
+    background-color: rgb(200, 224, 163);
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+}
