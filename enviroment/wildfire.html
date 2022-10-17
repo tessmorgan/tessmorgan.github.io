@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        body {
+            background-image: linear-gradient(rgba(200, 224, 163, 0.4), rgba(200, 224, 163, 0.4)), url("images/air/background.jfif");
+            background-attachment: unset;
+            background-position: center;
+            background-repeat: repeat;
+        }
+        
         h1,
         h2,
         h3 {
@@ -61,6 +68,14 @@
             grid-row: 2 / span 2;
         }
         
+        .side-resources p a {
+            color: rgb(198, 121, 54);
+        }
+        
+        .side-resources p a:hover {
+            color: rgb(234, 159, 127);
+        }
+        
         .intro {
             background-color: rgb(56, 134, 85);
             grid-column: 2 / span 6;
@@ -99,6 +114,9 @@
             grid-row: 5;
             border-radius: 0px;
             background-color: rgb(38, 84, 55);
+            border-left: rgb(3, 52, 24) solid 40px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
         }
         
         .vid-1-info {
@@ -154,37 +172,175 @@
         <!-- source https://www.w3schools.com/howto/howto_css_hero_image.asp -->
         <div class="grid-item main-img">
             <div class="hero-text">
-                <h1>Wildfires & Pollution</h1>
+                <h1>Fires & Air Quality</h1>
                 <p><i><b>The Haze of Smoke</b></i></p>
             </div>
         </div>
 
         <div class="grid-item side-resources">
             <h2>Further Resources</h2>
-            <p>If you're interested in learning more about <b>TOPIC</b>, we invite you to check out the following resources:</p>
+            <p>If you're interested in learning more about wildfires and smoke, we invite you to check out the following resources:</p>
+            <p><a href="https://www.who.int/health-topics/wildfires#tab=tab_1" target="_blank">World Health Organization:</a> a basic overview of wildfires, smoke, and their basic health impacts</p>
+            <p><a href="https://www.fs.usda.gov/pnw/page/fire-effects-environment" target="_blank">U.S. Forest Service:</a> brief introduction with sections for many different types of fire science and lots of research links</p>
+            <p><a href="https://ec.europa.eu/research-and-innovation/en/horizon-magazine/four-times-more-toxic-how-wildfire-smoke-ages-over-time" target="_blank">European Commission:</a> explores worldwide smoke impacts and discussions health and some chemistry/composition</p>
+            <p><a href="https://news.stanford.edu/2021/01/12/shifting-burden-wildfires-united-states/ " target="_blank">Stanford:</a> an interview with Stanford scientists with many wildfire-focused questions</p>
+            <p><a href="https://doh.wa.gov/newsroom/wildfire-smoke-will-likely-linger-across-washington-weekend" target="_blank">Wash DoH:</a> article about staying safe in ongoing Washington smoke</p>
+            <p><a href="https://www.doi.gov/blog/10-tips-prevent-wildfires" target="_blank">U.S. DotI:</a> series of tips for directly preventing wildfires</p>
+            <p><a href="https://www.npr.org/2021/08/31/1029821831/to-stop-extreme-wildfires-california-is-learning-from-florida" target="_blank">NPR:</a> discusses controlled burns and their usage in the South vs. the West</p>
+            <p><a href="https://www.c2es.org/content/wildfires-and-climate-change" target="_blank">C2ES:</a> significant discussion of preventing wildfires on a large scale, and the increase in wildfires by region</p>
         </div>
 
-        <div class="grid-item intro">Intro to Topic</div>
+        <div class="grid-item intro">
+            <h2>Wildfires & Smoke</h2>
+            <p>Wildfires are unplanned fires that burn in natural areas. They are primarily caused by human activities and natural phenomenon, and can happen anytime, anywhere. </p>
+            <p>Wildfires are a part of nature, bringing renewal and change. They speed up forest decomposition, create open patches of space for new plants to grow, improve habitat and food for animals, and helps deliver nutrients to surviving plants. However,
+                wildfires have become increasingly worse over time with increased size and frequency -- specifically, the number of large fires has doubled between 1984 and 2015 in the western United States.</p>
+            <p>The danger is not limited to the fire itself; the smoke can travel across continents and oceans, and is estimated to cause over 339,000 premature deaths per year. </p>
+        </div>
 
-        <div class="grid-item subtop-1">Subtop 1</div>
+        <div class="grid-item subtop-1">
+            <h2>Prevention & Management</h2>
+            <p>While we cannot -- and should not -- stop all wildfires in their tracks, there are many measures we can take to reduce the likelihood of wildfires and severe wildfires.</p>
+            <img src="images/air/controlburn.jpg" alt="" style="width:100%">
+            <h3>Wide-Scale</h3>
+            <p>Wildfires and their damage can be lessened by changing how we manage forests, where and how we build our homes, and by supporting firefighters and fire-prevention.</p>
+            <p>Firstly, we can increased controlled burns. This prevents a buildup of undergrowth that makes fires more intense. Ample fuels, such as dead trees, can be removed from at-risk forests.</p>
+            <p>Secondly, we can discourage large housing developments near fire-prone forests and increase the space between structures and brush. Additionally, we can use fire-resistant features and materials in houses designed to lessen the impacts of
+                fires.
+            </p>
+            <p>Thirdly, we can increase funding to firefighters and fire-prevention intiatives. Among many objectives, these help promote the measures above, as well as the development of recovery plans before fires hit.</p>
+        </div>
 
-        <div class="grid-item subtop-2">Subtop 2</div>
+        <div class="grid-item subtop-2">
+            <h3>Small-Scale</h3>
+            <p>There are many things individual people can do to reduce the risk of starting their own forest fire.</p>
+            <p>Many of these are guidelines for campers, such as building campfires far from flammable items, and dousing fires until they are cold when done. Additionally, one should always avoid fires or sparks when it's hot, dry, or windy.</p>
+            <p>Vehicles also play an important role in fires. By keeping your vehicles well-maintained and away from dry grass, you can significantly reduce the risk of machinery-induced fires.</p>
+            <img src="images/air/campfirering.jpg" alt="" style="width:100%">
+            <h3>After the Fact</h3>
+            <p>Wildfires are inevitable. However, there are still steps you can take to minimize your exposure to the smoke they create.</p>
+            <p>The most important way is to stay inside. Keep windows and doors closed, and try to filter your indoor air. Set your air conditioning to recirculate air rather than draw in fresh (and smoky) air from the outdoors. Avoid smoking or burning
+                candles indoors, and wear a mask whenever you go outside to lessen inhalation.</p>
+        </div>
 
-        <div class="grid-item tritop-1">Tritopic 1</div>
+        <div class="grid-item tritop-1">
+            <h2>Effects of Wildfires</h2>
+            <p>Wildfires have a range of effects on infrastructure. They can disrupt transportation, communications, power, gas, and water, among other services. Wildfires may almost melt plastic pipes, causing contamination.</p>
+            <p>More personally, they can directly cause wide-scale displacement and financial ruin for countless families and businesses.</p>
+            <p>Overall, they contribute to a loss of property, crops, resources, animals, and people, with potentially severe effects on mental health and psychosocial well-being.</p>
+            <img src="images/air/wildfirehill.jpg" alt="" style="width:100%">
+            <p>They can also cause significant injuries to physical health:</p>
+            <ul>
+                <li>Burns and injuries</li>
+                <li>Eye, nose, and throat irritation</li>
+                <li>Lung irritation and decreased lung function</li>
+                <ul>
+                    <li>Coughing and wheezing</li>
+                    <li>Pulmonary inflammation</li>
+                    <li>Bronchitis</li>
+                    <li>Exacerbations of asthma</li>
+                    <li>Etc.</li>
+                </ul>
+                <li>Worsening of cardiovascular diseases such as heart failure</li>
+            </ul>
+            <p>Wildfires also release lots of mercury, which can lead to speech impairment, hearing impairment, walking impairment, muscle weakness, and vision problems.</p>
+        </div>
 
-        <div class="grid-item tritop-2">Tritopic 2</div>
+        <div class="grid-item tritop-2">
+            <h2>Effects of Smoke</h2>
+            <img src="images/air/smokecrowd.jpg" alt="" style="width:100%">
+            <p>The smoke itself causes many symptoms alone, and, with how easily it carries across vast distances, can affect far more people than the wildfire itself without any of the affected consciously realizing the dangers.</p>
+            <p>Minor symptoms of smoke inhalation include:</p>
+            <ul>
+                <li>Eye, nose, and throat irritation</li>
+                <li>Lung irritation</li>
+                <ul>
+                    <li>Wheezing</li>
+                    <li>Coughing</li>
+                </ul>
+                <li>Headaches</li>
+                <li>Shortness of breath</li>
+            </ul>
+            <p>More serious or severe symptoms of smoke inhalation are as follows:</p>
+            <ul>
+                <li>Difficulty breathing</li>
+                <li>Chest pain</li>
+                <li>Irregular breathing</li>
+            </ul>
+            <img src="images/air/smokecough.jpg" alt="" style="width:100%">
+        </div>
 
-        <div class="grid-item tritop-3">Tritopic 3</div>
+        <div class="grid-item tritop-3">
+            <h2>Effects on Global Warming</h2>
+            <p>Wildfires release large amounts of carbon dioxide, carbon monoxide, and fine particulate matter into the atmosphere. These all empower global warming.</p>
+            <p>Additionally, smoke from burning vegetation has been proven to become more toxic over time, both to humans and the globe. As it travels, it reacts with trace radicals (molecules with unpaired electrons) to undergo oxidation. This turns the
+                smoke into highly reaction compounds called free radicals. This can make smoke as much as four times worse in only a 24-hour span. These smoke particles also contain carcinogens, which increase the risk of cancer.</p>
+            <img src="images/air/smokeglobal.jpg" alt="" style="width:100%">
+            <p>The brown carbon from wildfires absorbs heat from the sun and increases warming levels. Normally, the recolonizing plants after a wildfire would remove carbon from the atmosphere and make fires net neutral. However, the increasing frequency
+                and size of wildfires has overturned this balance: plants don't have time to fully mature before they're burned down again.</p>
+            <p>All in all, wildfires and smoke have an undoubtedly negative effect on global warming. This increases dry, warm environments, which in turn fuel more forest fires -- a downwards spiral that must be contained.</p>
+        </div>
 
-        <div class="grid-item vid-1">Video 1</div>
+        <div class="grid-item vid-1">
+            <p style="text-align: center;">
+                <img id="imgbox" src="images/air/marshallB.JPG" alt="" style="width:616px;height:346.5px;">
+            </p>
+        </div>
 
-        <div class="grid-item vid-1-info">Video info</div>
+        <div class="grid-item vid-1-info">
+            <h2>Photo Gallery</h2>
+            <p style="text-align: center;"><i>Click the buttons to view before-and-after photos.</i></p>
+            <p id="imgdes">This is a photo of Superior, Colorado taken September, 2021, before the Marshall Fire struck in December.</p>
+            <p style="text-align: center;">
+                <button onclick="marB();">Marshall Before</button>
+                <button onclick="marA();">Marshall After</button>
+                <button onclick="parA();">Paradise After</button>
+                <button onclick="parL();">Paradise Later</button>
+            </p>
+            <p><b>Interested in learning more?</b> Hit the button below to submit your email to have more information sent to your inbox.</p>
+            <p style="text-align:center">
+                <button onclick="maillist()">Sign Up</button>
+            </p>
+        </div>
 
-        <div class="grid-item"></div>
+        <br>
 
     </div>
 
     <div class="footer">Created by &copy; Hazel Goetsch</div>
+
+    <script>
+        function marB() {
+            document.getElementById('imgbox').src = 'images/air/marshallB.JPG';
+            document.getElementById('imgdes').innerHTML = 'This is a photo of Superior, Colorado taken September, 2021, before the Marshall Fire struck in December.';
+        }
+
+        function marA() {
+            document.getElementById('imgbox').src = 'images/air/marshallA.JPG';
+            document.getElementById('imgdes').innerHTML = 'This is the same neighborhood pictured just two months later in January of 2022. Save one house, all was destroyed.';
+        }
+
+        function parA() {
+            document.getElementById('imgbox').src = 'images/air/paradisea.jpg';
+            document.getElementById('imgdes').innerHTML = "This image documents the immediate damage to a neighborhood caused by the 2018 Camp Fire in Paradise, California.";
+        }
+
+        function parL() {
+            document.getElementById('imgbox').src = 'images/air/paradise1y.jpg';
+            document.getElementById('imgdes').innerHTML = "This is the same neighborhood one year after the fire. Still scarred, but with green trees and fresh lots -- renewal.";
+        }
+
+        function maillist() {
+            var email = prompt('Enter your email');
+            var name = prompt('Enter your name');
+            if (confirm('Hello! Our records show your name is ' + name + ' and your email is listed as ' + email + '. Is this correct?')) {
+                alert('Awesome! Thanks for signing up, ' + name + '!');
+            } else {
+                alert('Our mistake! Please try again by reclicking the sign up button.');
+            }
+            // NEW FEATURE -- learning (relearning??) confirmation boxes, relearning if/else in JS
+        }
+    </script>
 
 </body>
 

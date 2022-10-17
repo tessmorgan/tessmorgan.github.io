@@ -13,6 +13,10 @@
         body {
             background-image: linear-gradient(rgba(200, 224, 163, 0.4), rgba(200, 224, 163, 0.4)), url("images/air/background.jfif");
             /* NEW FEATURE -- didn't know linear gradient */
+            background-attachment: unset;
+            background-position: center;
+            background-repeat: repeat;
+            /* NEW FEATURES ??? -- hadn't been super aware of these before, particularly attachment. Doesn't really change my code... but proving I'm aware of it? IDK most of the basic CSS attribute suggestions aren't anything I'm looking to add in my code so I'm stretching with basic stuff. */
         }
         
         h1,
@@ -84,6 +88,10 @@
             color: rgb(35, 184, 174);
         }
         
+        .side-resources p a:hover {
+            color: rgb(127, 234, 226);
+        }
+        
         .intro {
             background-color: rgb(56, 134, 85);
             grid-column: 2 / span 6;
@@ -122,6 +130,10 @@
             grid-row: 5;
             border-radius: 0px;
             background-color: rgb(38, 84, 55);
+            border-left: rgb(3, 52, 24) solid 40px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            /* NEW FEATURES -- added border specifically to the left as a sort of index thing, then adjust the right border corners to be rounded instead of sqaure. Not entirely sure what I think of the look but it's subtle visual detail and it's not terrible and this time it's both new and impactful/not just confirming the defaults as with the background image stuff. */
         }
         
         .vid-1-info {
@@ -185,19 +197,20 @@
         <div class="grid-item side-resources">
             <h2>Further Resources</h2>
             <p>If you're interested in learning more about photochemical smog, we invite you to check out the following resources:</p>
-            <p><a href="https://education.nationalgeographic.org/resource/smog">National Geographic:</a> a friendly introduction to smog with a list of various solutions</p>
-            <p><a href="https://www.epa.sa.gov.au/files/8238_info_photosmog.pdf">South Australian Environment Protection Authority:</a> straightforward and comprehensive pdf</p>
-            <p><a href="https://energyeducation.ca/encyclopedia/Photochemical_smog">University of Calgary:</a> primarily explores the formation and composition of smog relatively briefly</p>
+            <p><a href="https://education.nationalgeographic.org/resource/smog" target="_blank">National Geographic:</a> a friendly introduction to smog with a list of various solutions</p>
+            <p><a href="https://www.epa.sa.gov.au/files/8238_info_photosmog.pdf" target="_blank">South Australian Environment Protection Authority:</a> straightforward and comprehensive pdf</p>
+            <p><a href="https://energyeducation.ca/encyclopedia/Photochemical_smog" target="_blank">University of Calgary:</a> primarily explores the formation and composition of smog relatively briefly</p>
             <p><a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/photochemical-smog" target="_blank">Science Direct:</a> highly scientific with excerpts from many textbooks</p>
-            <p><a href="https://www.britannica.com/science/photochemical-smog">Britannica:</a> your standard Britannica webpage, take it or leave it</p>
-            <p><a href="https://chem.libretexts.org/Ancillary_Materials/Exemplars_and_Case_Studies/Exemplars/Environmental_and_Green_chemistry/Photochemical_Smog">Libre Texts:</a> a brief progression of molecular changes in the formation of smog</p>
+            <p><a href="https://www.britannica.com/science/photochemical-smog" target="_blank">Britannica:</a> your standard Britannica webpage, take it or leave it</p>
+            <p><a href="https://chem.libretexts.org/Ancillary_Materials/Exemplars_and_Case_Studies/Exemplars/Environmental_and_Green_chemistry/Photochemical_Smog" target="_blank">Libre Texts:</a> a brief progression of molecular changes in the formation
+                of smog</p>
         </div>
 
         <div class="grid-item intro">
             <h2>Photochemical Smog</h2>
             <p>Photochemical smog is a type of air pollution produced when sunlight reacts with automobile exahust. It's common in cities and industrial areas, and is worse in warmer months as well as cities near mountains, as smog builds up rather than
                 spreading out. While the term "smog" was first coined in the 1900s as a combination of smoke and fog, photochemical smog was not understood until the the 1950s.</p>
-            <p>Washington generally has good Air Quality Index levels, but recent, pollution measures have been rising due to population growth, new industry, construction, and non-traffic based causes such as the increased frequency and severity of wildfires.</p>
+            <p>Washington generally has good Air Quality Index levels, but recently, pollution measures have been rising due to population growth, new industry, construction, and non-traffic based causes such as the increased frequency and severity of wildfires.</p>
         </div>
 
         <div class="grid-item subtop-1">
