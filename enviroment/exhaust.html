@@ -12,15 +12,18 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
+
     <style>
-        body {
-            background-image: linear-gradient(rgba(200, 224, 163, 0.4), rgba(200, 224, 163, 0.4)), url("images/air/background.jfif");
-            /* NEW FEATURE -- didn't know linear gradient */
-            background-attachment: unset;
+        /* body {
+            background-image: linear-gradient(rgba(200, 224, 163, 0.4), rgba(200, 224, 163, 0.4)), url("images/air/background.jfif"); */
+        /* NEW FEATURE -- didn't know linear gradient */
+        /*background-attachment: unset;
             background-position: center;
-            background-repeat: repeat;
-            /* NEW FEATURES ??? -- hadn't been super aware of these before, particularly attachment. Doesn't really change my code... but proving I'm aware of it? IDK most of the basic CSS attribute suggestions aren't anything I'm looking to add in my code so I'm stretching with basic stuff. */
-        }
+            background-repeat: repeat; */
+        /* NEW FEATURES ??? -- hadn't been super aware of these before, particularly attachment. Doesn't really change my code... but proving I'm aware of it? IDK most of the basic CSS attribute suggestions aren't anything I'm looking to add in my code so I'm stretching with basic stuff. */
+        /* Group decided against background image, leaving this here to highlight new knowledge*/
+        /* } */
         
         h1,
         h2,
@@ -49,7 +52,7 @@
         }
         
         .grid-item {
-            background-color: rgb(29, 109, 58);
+            background-color: rgb(29, 109, 76);
             border-radius: 15px;
             /* NEW FEATURE -- didn't know rounded corners */
             color: rgb(226, 248, 234);
@@ -82,7 +85,7 @@
         /* NEW FEATURE -- did not know hero text/text overlay on top of an image */
         
         .side-resources {
-            background-color: rgb(38, 84, 55);
+            background-color: rgb(38, 84, 67);
             grid-column: 1;
             grid-row: 2 / span 2;
         }
@@ -96,7 +99,7 @@
         }
         
         .intro {
-            background-color: rgb(56, 134, 85);
+            background-color: rgb(56, 134, 95);
             grid-column: 2 / span 6;
             grid-row: 2;
             border-radius: 0px;
@@ -132,8 +135,8 @@
             grid-column: 4 / span 4;
             grid-row: 5;
             border-radius: 0px;
-            background-color: rgb(38, 84, 55);
-            border-right: rgb(3, 52, 24) solid 40px;
+            background-color: rgb(38, 84, 67);
+            border-right: rgb(14, 58, 42) solid 40px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             /* NEW FEATURES -- added border specifically to the left as a sort of index thing, then adjust the right border corners to be rounded instead of sqaure. Not entirely sure what I think of the look but it's subtle visual detail and it's not terrible and this time it's both new and impactful/not just confirming the defaults as with the background image stuff. */
@@ -143,11 +146,12 @@
             grid-column: 1 / span 3;
             grid-row: 5;
             border-radius: 0px;
-            background-color: rgb(38, 84, 55);
+            background-color: rgb(38, 84, 67);
         }
         
         .footer {
-            background-color: rgb(4, 58, 40);
+            /* background-color: rgb(4, 58, 40); */
+            background-color: #45625D;
             color: rgb(226, 248, 234);
         }
     </style>
