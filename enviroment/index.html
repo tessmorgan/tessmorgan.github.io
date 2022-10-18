@@ -66,7 +66,7 @@
         }
 
         .main2 {
-            grid-column: 4/ span 2;
+            grid-column: 4/ span 3;
             grid-row: 4;
         }
 
@@ -171,7 +171,7 @@
         <div class="grid-item main-img">
             <div class="hero-text">
                 <h1 style="color: rgb(18, 23, 69);">Enviroment in the PNW</h1>
-                <p>Blah blah blah</p>
+                <p>Blah Blah</p>
             </div>
             <!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
         </div>
@@ -183,7 +183,14 @@
         <div class="grid-item side-image"></div>
         <div class="grid-item supportsect1"> Timeline <!--make diff size -->PNW's Enviromental History</div>
         <div class="grid-item supportsect2"> Importance <p class="para2">Humans depend on our Earth to survive. It is a necessity, not something we just have. This is the only home humans have and that's why it is essential to bring up environmental issues. Often, humans undermine how much we rely on our Earth to survive. Nowadays when you think of where your food comes from you think of the grocery store, you feel air blowing on your face while you're lounging on the coach from your air conditioning, and your water is dispensed from your refrigerator. We forgot where our necessities needed for survival actual come from. Our own actions are coming with consequences. Fate of humanity is determined by how we address these issues and our next moves as a society.</p></div>
-        <div class="grid-item main2">Main 2 Content</div>
+        <div class="grid-item main2"> What is Enviromental Justice? <p>
+            <p id='demo' style='display: none'>It's a term and movement to fight against the reality that vulnerable and marginalized communities are far more likely to experience pollution and contamination at a disproportionate level. People of color, poor people, and others are more likely to live near hazardous waste facilities, have lead contamination in the water, mold in public and private buildings, and so much more</p>     
+            <button type='button' onclick="toggleText()" class="button">Click to Find Out!</button>
+            <hr>
+            <p id='video' style='display: none'><iframe width="560" height="315" src="https://www.youtube.com/embed/30xLg2HHg8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>     
+            <button type='button' onclick="toggleVideo()" class="button">Click to Watch!</button>
+            
+        </p></div>
         <div class="grid-item sidenav">Side Nav</div>
 
         <div class="slider">
@@ -203,9 +210,29 @@
           </div>
     </div>
 
-   
+    <div class="footer">Created by &copy; Tess Morgan</div>
 
-    
+    <script>
+        function toggleText() {
+  var text = document.getElementById("demo");
+    document.getElementById("demo").style.fontSize='16px';
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function toggleVideo() {
+  var text = document.getElementById("video");
+    document.getElementById("video").style.fontSize='16px';
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+       
+    </script>
 
     
       
