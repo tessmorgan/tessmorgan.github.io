@@ -3,7 +3,51 @@
 /* H1 using:___ H2 using:___ Para using:___*/
 
 body {
-    background-color: rgb(200, 224, 163);
+    background-image: linear-gradient(rgba(200, 224, 163, 0.4), rgba(200, 224, 163, 0.4)), url("images/air/background.jfif");
+    background-attachment: unset;
+    background-position: center;
+    background-repeat: repeat;
+    font-family: serenity, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-family: serenity, sans-serif;
+    font-weight: 1500;
+    font-style: normal;
+}
+
+h2 {
+    font-family: serenity, sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+h3 {
+    font-family: serenity, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+button {
+    font-family: serenity, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.para {
+    font-size: 20px;
+}
+
+.para2 {
+    font-size: 18px;
 }
 
 .navbar li {
@@ -17,7 +61,7 @@ body {
     margin-bottom: 15px;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(4, 58, 40);
+    background-color: #45625D;
 }
 
 .navbar li a,
@@ -37,7 +81,7 @@ body {
 
 .navbar li a:hover,
 .dropdown:hover {
-    background-color: rgb(15, 116, 69);
+    background-color: #6AA5A9;
 }
 
 .dropdown {
@@ -48,7 +92,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2a8b69;
+    background-color: rgb(166, 211, 214);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
