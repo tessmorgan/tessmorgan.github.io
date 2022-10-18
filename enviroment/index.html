@@ -76,10 +76,17 @@
             grid-row: 3 / span 3;
             background-color: rgb(38, 84, 67);
         }
+        .sidenav p a {
+            color: rgb(35, 184, 174);
+        }
+        
+        .sidenav p a:hover {
+            color: rgb(127, 234, 226);
+        }
         .slider {
         width: 500px;
         height: 300px;
-        background-color: yellow;
+        background-color: rgb(19, 19, 19);
         margin-left: auto;
         margin-right: auto;
         margin-top: 0px;
@@ -121,7 +128,7 @@
         height: 15px;
         width: 15px;
         border-radius: 50px;
-        background-color: white;
+        background-color: rgb(38, 84, 67);
       }
       
 
@@ -188,20 +195,26 @@
             <p id='demo' style='display: none'>It's a term and movement to fight against the reality that vulnerable and marginalized communities are far more likely to experience pollution and contamination at a disproportionate level. People of color, poor people, and others are more likely to live near hazardous waste facilities, have lead contamination in the water, mold in public and private buildings, and so much more</p>     
             <button type='button' onclick="toggleText()" class="button">Click to Find Out!</button>
             <hr>
-            <p id='video' style='display: none'><iframe width="560" height="315" src="https://www.youtube.com/embed/30xLg2HHg8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>     
+            <p id='video' style='display: none'><iframe width="448" height="252" src="https://www.youtube.com/embed/30xLg2HHg8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>     
             <button type='button' onclick="toggleVideo()" class="button">Click to Watch!</button>
             
         </p></div>
-        <div class="grid-item sidenav">Side Nav</div>
+        <div class="grid-item sidenav">
+            <h3>Further Resources</h3>
+            <p class="para"> If you're interested in learning more about the Enviroment in the PNW and Enviromental Justice:</p>
+            <p class="para"><a href="https://www.seattle.gov/environment/environmental-progress/healthy-environment" target="_blank">Seattle Gov:</a> basic enviromental information</p>
+            <p class="para"><a href="https://animalsofpnw.com/2020/09/16/environmental-justice/" target="_blank">Animals of PNW:</a> more info on Enviromental Justice</p>
+            <p class="para"><a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/oregon/stories-in-oregon/how-climate-change-will-impact-the-pacific-northwest/" target="_blank">The Nature Conservancy:</a> learn how climate change is impacting the PNW and what you can expect if we don't take action</p>
+        </div>
 
         <div class="slider">
             <span id="slide-1"></span>
             <span id="slide-2"></span>
             <span id="slide-3"></span>
             <div class="image-container">
-              <img src="/uploads/media/default/0001/03/66cf5094908491e69d8187bcf934050a4800b37f.jpeg" class="slide" width="500" height="300" />
-              <img src="/uploads/media/default/0001/03/b7d624354d5fa22e38b0ab1f9b905fb08ccc6a05.jpeg" class="slide" width="500" height="300" />
-              <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" class="slide" width="500" height="300" />
+              <img src="images/fogvalley.jpg9" class="slide" width="500" height="300" />
+              <img src="images/gasemission.png" class="slide" width="500" height="300" />
+              <img src="images/healthmap.webp" class="slide" width="500" height="300" />
             </div>
             <div class="buttons">
               <a href="#slide-1"></a>
