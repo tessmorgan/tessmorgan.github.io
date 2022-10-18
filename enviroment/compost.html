@@ -7,8 +7,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compost</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
 
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto auto auto;
+        }
+        
+        .grid-item {
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+        /*new feature, hero image and text*/
+        
+        .main-image {
+            grid-column: 1 / span 5;
+            grid-row: 1;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .75)), url("images/waste/compost-main.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 300px;
+        }
+        
+        .why {
+            grid-column: 1 / span 2;
+            grid-row: 4 /span 2;
+        }
+        
+        .video {
+            grid-column: 1 /span 4;
+            grid-row: 2;
+        }
+        
+        .what {
+            grid-column: 3 /span 2;
+            grid-row: 4 /span 2;
+        }
+        
+        .resources {
+            grid-column: 5;
+            grid-row: 2 /span 3;
+        }
+        
+        .facts {
+            grid-column: 5;
+            grid-row: 5;
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        /* New feature, next and previous button, */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev {
+            left: 0;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* New feature, animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        .slideshow-container img {
+            width: 600px;
+        }
+        
+        .text span {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        button {
+            display: block;
+            background-color: rgb(4, 58, 40);
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        button a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
     </style>
 </head>
 
@@ -49,12 +215,115 @@
 
     </div>
 
+    <div class="grid-container">
 
-    <h1>Compost</h1>
-    <h2>Process</h2>
+        <div class="grid-item main-image">
+            <div class="hero-text">
+                <h1>Compost</h1>
+                <p>Learn about the process of composting in Seattle</p>
+            </div>
+        </div>
+        <div class="grid-item video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFlsjRXbnSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="grid-item resources">
+            <h1>Resources</h1>
+            <button> <a href="https://www.seattle.gov/utilities/your-services/collection-and-disposal/food-and-yard" target="_blank">Seattle Utilities on composting</a> </button>
+            <button><a href="https://www.epa.gov/recycle/composting-home" target="_blank">Composting at Home</a></button>
+            <button><a href="https://www.compostingcouncil.org/page/CompostBenefits" target="_blank">Benefits of composting</a></button>
+
+
+        </div>
+        <div class="grid-item why">Why</div>
+        <div class="grid-item what">What can you compost in your Seattle Yard waste bin?
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1/4</div>
+                    <img src="images/waste/food-waste.jfif" alt="Food Waste">
+                    <div class="text"><span>All Food Waste</span></div>
+                </div>
+
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2/4</div>
+                    <img src="images/waste/food-paper.jfif" alt="Food Soiled Paper">
+                    <div class="text"><span>Food Soiled Paper</span></div>
+                </div>
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3/4</div>
+                    <img src="images/waste/paper.jpeg" alt="Compostable Products">
+                    <div class="text"><span>Approved Compostable Products</span></div>
+                </div>
+
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4/4</div>
+                    <img src="images/waste/yard-waste.jfif" alt="Yard Waste">
+                    <div class="text"><span>Yard Waste</span></div>
+                </div>
+
+
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <div class="grid-item facts">Facts and Figures</div>
+
+
+    </div>
+
     <div class="footer">
         <p>Made by Sara Dunnigan</p>
     </div>
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
