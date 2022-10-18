@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- How did I challenge myself? -->
+<!-- I challenged mysef by putting together a detailed CSS grid with many layers to allow for both split by 3rds and a split by 5ths, and by paying attention to smaller details such as using rounded/square corners and the shade of the box to determine what draws more attention and how the eye moves down the screen, and also just general polish that may not mean too much but I liked. I also challenged myself by using linear gradients to help manage the color/tone schemes. I challenged myself to stay ahead of class to keep my own schedule clear, and had 90% of my structure before the first full-class worktime, but as a person who likes to have control of the fine details, I reminded myself to allow free variables, such as not knowing all the fonts or colors or shared elements beforehand. -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -126,18 +129,18 @@
         }
         
         .vid-1 {
-            grid-column: 1 / span 4;
+            grid-column: 4 / span 4;
             grid-row: 5;
             border-radius: 0px;
             background-color: rgb(38, 84, 55);
-            border-left: rgb(3, 52, 24) solid 40px;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-right: rgb(3, 52, 24) solid 40px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
             /* NEW FEATURES -- added border specifically to the left as a sort of index thing, then adjust the right border corners to be rounded instead of sqaure. Not entirely sure what I think of the look but it's subtle visual detail and it's not terrible and this time it's both new and impactful/not just confirming the defaults as with the background image stuff. */
         }
         
         .vid-1-info {
-            grid-column: 5 / span 3;
+            grid-column: 1 / span 3;
             grid-row: 5;
             border-radius: 0px;
             background-color: rgb(38, 84, 55);
@@ -157,8 +160,8 @@
         <li class="dropdown">
             <a class="dropbtn">Wildlife</a>
             <div class="dropdown-content">
-                <a href="aquatic-wildlife.html">Aquatic Wildlife</a>
-                <a href="land-wildlife.html">Land Wildlife</a>
+                <a href="animals.html">Animals</a>
+                <a href="plants.html">Plants</a>
             </div>
         </li>
         <li class="dropdown">
