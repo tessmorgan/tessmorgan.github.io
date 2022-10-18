@@ -19,7 +19,7 @@
         .grid-item {
             text-align: center;
             font-size: 20px;
-            padding: 15px;
+            padding: 20px;
             border-radius: 15px;
         }
 
@@ -80,6 +80,20 @@
             grid-column: 2 / span 1;
             grid-row: 3;
         }
+
+        table,
+        td {
+            border: 3px solid;
+            border-collapse: collapse;
+            border-color: rgb(4, 58, 40);
+            text-align: center;
+            padding: 15px;
+        }
+
+        tr:hover {
+            background-color: rgb(10, 94, 55);
+            /*NEW FEATURE* I've never tried changing the color of a table row when the cursor hovers over it, and I thought it was a cool feature to try :)*/
+        }
     </style>
 </head>
 
@@ -122,13 +136,38 @@
         </div>
         <div class="grid-item main1">
             <h1>Endangered Species</h1>
-            <p></p>
+            <p>The Pacific Northwest is home to many endangered and threatened species. From the Sandhill Crane to the
+                Oregon Spotted Frog, countless species are currently facing extinction. Increasing human actions such as
+                poaching,
+                greenhouse gas emissions, habitat destruction and disruption, and more increase the inevitability of
+                losing the many precious species. It is vital that this rising issue is brought to attention,
+                and that steps are immediately taken to combat this crisis.</p>
         </div>
         <div class="grid-item support-section1">
             <h1>Marine Life</h1>
-            <p></p>
+            <p>Marine wildlife has been on a heavy decline as marine debris, overfishing, and hunting has increased
+                leading to suffering marine ecosystems. Below are some specific examples:</p>
+            <table>
+                <tr>
+                    <td>Chinook Salmon</td>
+                    <td>Chinook salmon populations have been on an intense decline since the late 1900's as rates
+                        overfishing,
+                        habitat loss and destruction, and climate change has risen.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/salmon.jpg"
+                                id="salmon"></img></p>
+                        <button onclick="Chinooksalmon()">Click
+                            to see Chinook Salmon!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Puget Sound Orcas</td>
+                </tr>
+                <tr>
+                    <td>Marine Debris</td>
+                </tr>
+            </table>
         </div>
-        <div class="grid-item support-section2">
+        <div class=" grid-item support-section2">
             <h1>Forest Life</h1>
         </div>
         <div class=" grid-item main2">
@@ -150,7 +189,15 @@
             Created by &copy; Lexi Kelley
         </div>
     </div>
-
+    <script>
+        function Chinooksalmon() {
+            let salmonImage = document.getElementById('salmon')
+            src = 'images/salmon.jpg';
+            salmonImage.style.display = 'block'
+            salmonImage.style.width = '400px'
+            /*NEW FEATURE* I tried using a button to make an image appear!*/
+        }
+    </script>
 </body>
 
 </html>
