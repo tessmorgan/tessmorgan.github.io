@@ -158,13 +158,13 @@
                 <tr>
                     <td><a style="color:rgb(35, 184, 174)"
                             href="https://www.governor.wa.gov/issues/issues/energy-environment"
-                            target="_blank">Washington Governor</a></td>
+                            target="_blank">governor.wa.gov</a></td>
                     <td>Reducing Emissions</td>
                 </tr>
                 <tr>
                     <td><a style="color:rgb(35, 184, 174)"
                             href="https://rco.wa.gov/grant/washington-wildlife-and-recreation-program-habitat/"
-                            target="_blank">Recreation and Conservation Office</a></td>
+                            target="_blank">rco.wa.gov</a></td>
                     <td>Land Conservation</td>
                 </tr>
             </table>
@@ -177,9 +177,13 @@
                 jobs in the state.
             </p>
             <p id="hidden"></p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 50%;" src="images/inslee.jpg" id="inslee"></img></p>
             <button class="button"
-                onclick="document.getElementById('hidden') .innerHTML='Inslee established Washington state as a global leader of subnational governments dedicated to climate action. He also co-founded the bipartisan U.S. Climate Alliance and the International Ocean Acidification Alliance, and helped lead the Pacific Coast Collaborative and Under2 Coalition.'; document.getElementById('hidden').style.display='block'">
+                onclick="document.getElementById('hidden') .innerHTML='Inslee established Washington state as a global leader of subnational governments dedicated to climate action. He also co-founded the bipartisan U.S. Climate Alliance and the International Ocean Acidification Alliance, and helped lead the Pacific Coast Collaborative and Under2 Coalition.'; document.getElementById('hidden').style.display='block';InsleePicture()">
                 Click here to see further details about Inslee!</button>
+            <!--I assigned two functions to one onclick in this button-->
         </div>
         <div class="grid-item support2">
             <h2>Funding Land Conservation Efforts</h2>
@@ -203,6 +207,13 @@
     </div>
 
     <script>
+        function InsleePicture() {
+            let landImage = document.getElementById('inslee')
+            src = 'images/inslee.jpg';
+            landImage.style.display = 'block'
+            /*I used a button to make an image appear*/
+
+        }
         function ProtectedLand() {
             let landImage = document.getElementById('land')
             src = 'images/land.jpg';
