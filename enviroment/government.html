@@ -1,3 +1,7 @@
+<!-- I challanged myself in this project by putting a great amount of effort into my css by having all of my colors 
+    and text correspond to each other throughout my webpages and have everything look aesthetically pleasing to 
+    fit the overall theme of the website (enviornment). My goal was to make my web pages look clean, 
+    someonewhat educational, fun, and nature esque to keep up with the envionrmental aspect/topic. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,18 +16,22 @@
             display: grid;
             grid-gap: 10px;
             grid-template-columns: auto auto auto;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         .grid-item {
-            background-color: lightblue;
             text-align: center;
-            font-size: 30px;
+            font-size: 17px;
+            padding: 30px;
+            border-radius: 15px;
         }
 
         .main-image {
             grid-column: 1 /span 3;
             grid-row: 2;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/government.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/government.jpg");
+            /*I used the "linear-gradient" that makes the background image in the grid to have a darker gradient to make the white text over it more visible*/
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -47,7 +55,6 @@
         .sidenav {
             grid-column: 3;
             grid-row: 3/ span 3;
-            background-color: red;
         }
 
         .support1 {
@@ -67,7 +74,14 @@
             padding: 20px;
         }
 
-        #title1 {}
+        .title1 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
     </style>
 </head>
 
@@ -108,23 +122,66 @@
 
     <div class="grid-container">
         <div class="grid-item main-image">
-            <h1 id="title1">Current
-                Government Action</h1>
+            <div class="title1">
+                <h1>Current Government Action</h1>
+                <p>How the Government is Taking Action to Protect the Enviornment</p>
+            </div>
         </div>
-        <div class="grid-item main1">Main 1 Content</div>
-        <div class="grid-item main2">Main 2 Content</div>
-        <div class="grid-item sidenav">Side Nav</div>
-        <div class="grid-item support1">Support Section 1</div>
-        <div class="grid-item support2">Support Section 2</div>
+        <div class="grid-item main1">
+            <h3>Importance of Power that a State's Government Holds</h3>
+            <p>A state's government possesses a great amount of power that can be put to good use. They are able to
+                create policies on commerce, taxation, healthcare, education, and many other
+                issues within their state. There is a wide range of possibilities of how the government can put these
+                specific means to use (including helping the envionrment); and it is important that they make use of
+                this power and do the most with it because if they don't there would be no change.</p>
+        </div>
+        <div class="grid-item main2">
+            <h3>What is the Washington Department of Ecology and What do They do to Help the Envionrment?</h3>
+            <p class="small-text" style="text-align: left;">The Washington Department of Ecology has a goal of
+                protecting, perserving, and
+                enhancing the enviornment.
+                They do so by doing a various amount of actions presented in this video:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=cV3Q7_ne-tY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="grid-item sidenav">
+            <h3>Resources:</h3>
+            <p id="secret"></p>
+            <button class="button"
+                onclick="document.getElementById('secret') .innerHTML='meow'; document.getElementById('secret').style.display='block'">
+                Click here to see Resources</button>
+            <button class="button" onclick="document.getElementById('secret').style.display='none'">Click here to hide
+                Resources</button>
+        </div>
+        <div class="grid-item support1">
+            <h3>Reducing Emissions</h3>
+            <p></p>
+            <button class="button" onclick="Chinooksalmon()">Click
+                here to see a picture of the action!</button>
+        </div>
+        <div class="grid-item support2">
+            <h3>Funding Land Conservation Efforts</h3>
+            <p></p>
+            <button class="button" onclick="Chinooksalmon()">Click
+                here to see a picture of the action!</button>
+        </div>
     </div>
-
-    <h1>Government</h1>
-    <h2>Reducing Emissions</h2>
-    <h2>Funding Land Conservation Efforts</h2>
 
     <div class="footer">
         Created by &copy; Abigail Weilbacher
     </div>
+
+    <script>
+        function Chinooksalmon() {
+            let salmonImage = document.getElementById('salmon')
+            src = 'images/salmon.jpg';
+            salmonImage.style.display = 'block'
+            salmonImage.style.width = '300px'
+            /*I used a button to make an image appear*/
+        }
+    </script>
 </body>
 
 </html>
