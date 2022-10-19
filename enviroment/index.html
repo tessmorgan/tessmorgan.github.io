@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- How I challenged myself: From volunteering to be team leader to doing an multitude of new features I challenged myself in many ways during this project. I implemted new add ons to features we learned in class and also had a hand full of brand new things. For example I made a picture slide show where the 3 little dots at the bottom of the left hand side picutre can slide over to 2 more pictures. I felt proud of that outcome because it took a lot to excute exactly what I was picturing in my mind. I also combined things we learned together such as making a button reveal a embeded youtube video. That one did not have code for it online so I had to use what I know to incorporate them. I also add a new hover feature in the table, a title picture with text over it, rounded corners in my boxes, and so mch more. As team leader I made sure everything that was consistent over our websites was in the external css. I also made sure to have a ton of internal css, in-line (only occasionally bc wasn't that efficient), worked with css grid, and also made funtions and buttons with javascript. -->
 
 <head>
     <meta charset="UTF-8">
@@ -54,13 +55,13 @@
         }
 
         .supportsect1 {
-            grid-column: 1/ span 2;
+            grid-column: 1/ span 3;
             grid-row: 3;
             background-color: rgb(29, 109, 76);
         }
 
         .supportsect2 {
-            grid-column: 3/ span 4;
+            grid-column: 4/ span 3;
             grid-row: 3;
             background-color: rgb(29, 109, 76);
         }
@@ -131,7 +132,20 @@
         background-color: rgb(38, 84, 67);
       }
       
+      table,
+        td {
+            border: 3px solid;
+            border-collapse: collapse;
+            border-color: rgb(4, 58, 40);
+            text-align: left;
+            padding: 20px;
+            font-size: 16px;
+        }
 
+        tr:hover {
+            background-color: rgb(10, 94, 55);
+        }
+        /*NEW FEATURE*/
       
     </style>
 </head>
@@ -181,7 +195,7 @@
                 <h1 style="color: rgb(18, 23, 69);">Environment in the PNW</h1>
                 <p>Importance, Action, & Beauty</p>
             </div>
-            <!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+            <!-- NEW FEATURE -->
         </div>
 
 
@@ -189,7 +203,37 @@
 
         <div class="grid-item main1"> <h2>Introduction</h2><p class="para">Washington is an amazing state full of beautiful scenery from mountain ranges, and bodies of water, forest, beaches, and much more. Our state values to keep our air and water clean and reducing waste so future generations will continue to enjoy a healthy, safe, and clean city. Unfortunately, do to our rise in population over time our impacts to the environment rise as well. Heavy city traffic emits carbon emission into our air and bodies of water have been suffering do to our waste. This is a call to action urgently requesting upon the residents of Seattle to learn about the beautiful state we live in, acknowledge our impacts, and gain insight into how to reduce and fight back against the war to save our state. </p></div>
         <div class="grid-item side-image"></div>
-        <div class="grid-item supportsect1"> Timeline <!--make diff size -->PNW's Environmental History</div>
+        <div class="grid-item supportsect1"> <p class="para"> PNW's Environmental History Timeline </p>
+            <table>
+                <tr>
+                    <td>Year</td>
+                    <td>Event
+                    </td>
+                </tr>
+                <tr>
+                    <td>1895</td>
+                    <td>Power generating plant built at Snoqualmie Falls
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>1917</td>
+                    <td>U.S. enters World War I. Shipbuilding in Portland and Seattle booms
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1964</td>
+                    <td>Congress passes the Wilderness Act
+                    </td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>Reports of Northwest Douglas fir trees infected with sudden oak death fungus. U.S. Forest Service officials declare 2002 the worst fires seasons on record for the Pacific Northwest
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div class="grid-item supportsect2"> Importance <p class="para2">Humans depend on our Earth to survive. It is a necessity, not something we just have. This is the only home humans have and that's why it is essential to bring up environmental issues. Often, humans undermine how much we rely on our Earth to survive. Nowadays when you think of where your food comes from you think of the grocery store, you feel air blowing on your face while you're lounging on the coach from your air conditioning, and your water is dispensed from your refrigerator. We forgot where our necessities needed for survival actual come from. Our own actions are coming with consequences. Fate of humanity is determined by how we address these issues and our next moves as a society.</p></div>
         <div class="grid-item main2"> What is Environmental Justice? <p>
             <p id='demo' style='display: none'>It's a term and movement to fight against the reality that vulnerable and marginalized communities are far more likely to experience pollution and contamination at a disproportionate level. People of color, poor people, and others are more likely to live near hazardous waste facilities, have lead contamination in the water, mold in public and private buildings, and so much more</p>     
@@ -197,7 +241,7 @@
             <hr>
             <p id='video' style='display: none'><iframe width="448" height="252" src="https://www.youtube.com/embed/30xLg2HHg8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>     
             <button type='button' onclick="toggleVideo()" class="button">Click to Watch!</button>
-            
+           <!-- NEW FEATURE -->
         </p></div>
         <div class="grid-item sidenav">
             <h3>Further Resources</h3>
@@ -206,8 +250,9 @@
             <p class="para"><a href="https://animalsofpnw.com/2020/09/16/environmental-justice/" target="_blank">Animals of PNW:</a> more info on Environmental Justice</p>
             <p class="para"><a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/oregon/stories-in-oregon/how-climate-change-will-impact-the-pacific-northwest/" target="_blank">The Nature Conservancy:</a> learn how climate change is impacting the PNW and what you can expect if we don't take action</p>
         </div>
+       
 
-        <div class="slider">
+        <div class="slider">  <!-- NEW FEATURE -->
             <span id="slide-1"></span>
             <span id="slide-2"></span>
             <span id="slide-3"></span>
