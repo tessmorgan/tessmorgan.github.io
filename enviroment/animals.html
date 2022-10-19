@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals of the PNW</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: auto auto auto;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .grid-item {
+            text-align: center;
+            font-size: 17px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .header {
+            grid-column: 1 / span 5;
+            grid-row: 2;
+        }
+
+        .navmenu {
+            grid-column: 1 / span 5;
+            grid-row: 1;
+        }
+
+        .main-image {
+            grid-column: 1 / span 5;
+            grid-row: 1;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0.323)), url(images/wildlife/land-wildlife-1.jpg);
+            /*NEW FEATURE* Hazel showed me this feature that allows the image set as the background to a grid section to have a darker gradient so that white text overlays visibly*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 400px;
+
+        }
+
+        .title1 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .main1 {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+        }
+
+        .main2 {
+            grid-column: 1 / span 4;
+            grid-row: 4;
+        }
+
+
+        .sidenav {
+            grid-column: 5;
+            grid-row: 2 / span 3;
+        }
+
+        .support-section1 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .support-section2 {
+            grid-column: 3 / span 2;
+            grid-row: 3;
+        }
+
+        table,
+        td {
+            border: 3px solid;
+            border-collapse: collapse;
+            border-color: rgb(4, 58, 40);
+            text-align: left;
+            padding: 20px;
+        }
+
+        tr:hover {
+            background-color: rgb(10, 94, 55);
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a class="dropbtn">Wildlife</a>
+            <div class="dropdown-content">
+                <a href="animals.html">Animals</a>
+                <a href="plants.html">Plants</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">Air</a>
+            <div class="dropdown-content">
+                <a href="wildfire.html">Wildfires</a>
+                <a href="exhaust.html">Exhaust</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">Waste</a>
+            <div class="dropdown-content">
+                <a href="compost.html">Compost</a>
+                <a href="recycle.html">Recycle</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a class="dropbtn">Action</a>
+            <div class="dropdown-content">
+                <a href="government.html">Government Action</a>
+                <a href="personal.html">Personal Action</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item main-image">
+            <div class="title1">
+                <h1>Animals of the PNW</h1>
+                <p>A Wildlife Crisis</p>
+            </div>
+        </div>
+        <div class="grid-item main1">
+            <h1>Endangered Animals</h1>
+            <p>The Pacific Northwest is home to many endangered and threatened species. From the Sandhill Crane to the
+                Oregon Spotted Frog, countless species are currently facing extinction. Increasing human actions such as
+                poaching,
+                greenhouse gas emissions, habitat destruction and disruption, and more increase the inevitability of
+                losing the many precious species. It is vital that this rising issue is brought to attention,
+                and that steps are immediately taken to combat this crisis.</p>
+        </div>
+        <div class="grid-item support-section1">
+            <h1>Marine Life</h1>
+            <p>The PNW's marine animals has been on a heavy decline as marine debris, overfishing, and hunting has
+                increased
+                leading to suffering marine ecosystems. Below are some examples of these endangered marine species:</p>
+            <table>
+                <tr>
+                    <td>Chinook Salmon</td>
+                    <td>Chinook salmon populations in the Pacific Northwest have been on an intense decline since the
+                        late 1900's as rates
+                        overfishing,
+                        habitat loss and destruction, and climate change has risen.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/salmon.jpg"
+                                id="salmon"></img></p>
+                        <button class="button" onclick="Chinooksalmon()">Click
+                            to see Chinook Salmon!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Puget Sound Orcas</td>
+                    <td>The Pugest Sound Orca population has been declining. In the 1960s to 1970's, these orcas were a
+                        main target to be captured to live in Sea World, causing a huge decimation in their population.
+                        Since, the Puget Sound orca population has only continued dropping. There have been less orcas
+                        to reproduce, and the remaining ones still face capture or
+                        hunting, as well as increasing loss of their main food source: salmon.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/orcas.jpg"
+                                id="orcas"></img></p>
+                        <button class="button" onclick="PSorcas()">Click
+                            to see Puget Sound orcas!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Steller Sea Lions</td>
+                    <td>For centuries, Steller Sea Lions have been victim to hunting for their fur and oil resources.
+                        Still victim to the dangers of hunting, pollution, and habitat destruction and loss, Steller Sea
+                        Lions are listed as an endangered species.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/sealion.jpg"
+                                id="sealion"></img></p>
+                        <button class="button"" onclick=" SSeaLion()">Click
+                            to see Steller Sea Lions!</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" grid-item support-section2">
+            <h1>Terrestrial Life</h1>
+            <p>The PNW's terrestrial animals have historically faced issues like loss of habitat from
+                deforestation,
+                hunting, and more that have caused many species to be declared endangered.Below are some examples of
+                these endangered species:</p>
+            <table>
+                <tr>
+                    <td>Pygmy Rabbits</td>
+                    <td>Pygmy rabbits are the smallest wild rabbits in North America, living in south-central
+                        Washington. This species of wild rabbits, along with many others, have been declared endangered
+                        as they continuously face habitat loss with
+                        increasingly common, massive wildfires.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/rabbit.jpg"
+                                id="rabbit"></img></p>
+                        <button class="button" onclick="pygmyrabbit()">Click
+                            to see a Pygmy Rabbit!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gray Wolves</td>
+                    <td>Gray wolves are a beautiful species of wild wolf, which has faced severe hunting and poisoning
+                        from anti-wolf Americans. Beliefs that wolves are dangerous and should be exterminated has led
+                        to the intense decline in the gray wolf's population in the PNW and throughout the country as
+                        they are consistently targeted.
+                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/wolf.jpg"
+                                id="wolf"></img></p>
+                        <button class="button" onclick="Graywolf()">Click
+                            to see a Gray Wolf!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Northern Spotted Owl</td>
+                    <td>The Northern Spotted Owl, facing loss and degradation of habitat, have been at a steady decline
+                        of 2.9% per year in population. They also face competition with the Barred Owl, a more
+                        aggressive species that has expanded westwards and taken over habitats of the Northern Spotted
+                        Owl. With a decreasing population of about 15,000, this species has been declared threatened and
+                        endangered. <p style="text-align:center;"><img style="display:none"
+                                src="images/wildlife/owl.jpg" id="owl"></img></p>
+                        <button class="button" onclick="NSOwl()">Click
+                            to see the Northern Spotted Owl!</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-item main2">
+            <h1>More Information on Endangered Animals</h1>
+            <p>There are countless species of animals that are threatened or endangered in the PNW today. To learn about
+                more specific species and their threatened habitats, check out the video below!</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/32-5zf0bAlI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="grid-item sidenav">
+            <h1>Further Resources:</h1>
+            <ol>
+                <li>__: <a href="" target="_blank">___</a></li>
+            </ol>
+        </div>
+    </div>
+    <div>
+        <div class="footer">
+            Created by &copy; Lexi Kelley
+        </div>
+    </div>
+    <script>
+        function Chinooksalmon() {
+            let salmonImage = document.getElementById('salmon')
+            src = 'images/salmon.jpg';
+            salmonImage.style.display = 'block'
+            salmonImage.style.width = '300px'
+            /*NEW FEATURE* I tried using a button to make an image appear! Used multiple times, as seen below*/
+        }
+        function PSorcas() {
+            let orcasImage = document.getElementById('orcas')
+            src = 'images/orcas.jpg';
+            orcasImage.style.display = 'block'
+            orcasImage.style.width = '300px'
+        }
+        function SSeaLion() {
+            let sealionImage = document.getElementById('sealion')
+            src = 'images/sealion.jpg';
+            sealionImage.style.display = 'block'
+            sealionImage.style.width = '300px'
+        }
+        function pygmyrabbit() {
+            let rabbitImage = document.getElementById('rabbit')
+            src = 'images/rabbit.jpg';
+            rabbitImage.style.display = 'block'
+            rabbitImage.style.width = '300px'
+        }
+        function Graywolf() {
+            let wolfImage = document.getElementById('wolf')
+            src = 'images/wolf.jpg';
+            wolfImage.style.display = 'block'
+            wolfImage.style.width = '300px'
+        }
+        function NSOwl() {
+            let owlImage = document.getElementById('owl')
+            src = 'images/owl.jpg';
+            owlImage.style.display = 'block'
+            owlImage.style.width = '300px'
+        }
+    </script>
+</body>
+
+</html>

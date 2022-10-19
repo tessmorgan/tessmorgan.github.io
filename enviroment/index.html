@@ -5,20 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviroment</title>
+    <title>Environment</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
+    <style>
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 19% 12% 6% auto 5% 13% 19%;
+            /* 1/5 1/3 2/5 3/5 2/3 4/5 3/3*/
+        }
+
+        .grid-item {
+            background-color: rgb(22, 107, 53);
+            border-radius: 10px;
+            color: rgb(226, 248, 234);
+            text-align: center;
+            font-size: 30px;
+            padding: 25px;
+        }
+
+        .main-img {
+            grid-column: 1 / span 7;
+            grid-row: 1;
+            background-image: url("images/bluemountain3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 300px;
+        }
+
+        .side-image {
+            grid-column: 5 / span 3;
+            grid-row: 2;
+            background-image: url("images/flowermountain.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 300px;
+        }
+
+        .main1 {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+            background-color: rgb(56, 134, 95);
+        }
+
+        .supportsect1 {
+            grid-column: 1/ span 2;
+            grid-row: 3;
+            background-color: rgb(29, 109, 76);
+        }
+
+        .supportsect2 {
+            grid-column: 3/ span 4;
+            grid-row: 3;
+            background-color: rgb(29, 109, 76);
+        }
+
+        .main2 {
+            grid-column: 4/ span 3;
+            grid-row: 4;
+            background-color: rgb(38, 84, 67);
+        }
+
+        .sidenav {
+            grid-column: 7;
+            grid-row: 3 / span 3;
+            background-color: rgb(38, 84, 67);
+        }
+        .sidenav p a {
+            color: rgb(35, 184, 174);
+        }
+        
+        .sidenav p a:hover {
+            color: rgb(127, 234, 226);
+        }
+        .slider {
+        width: 500px;
+        height: 300px;
+        background-color: rgb(19, 19, 19);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: rgb(38, 84, 67);
+      }
+      
+
+      
+    </style>
 </head>
 
 <body>
-    <h1>Enviroment in the PNW</h1>
+    <br>
     <div>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
             <li class="dropdown">
                 <a class="dropbtn">Wildlife</a>
                 <div class="dropdown-content">
-                    <a href="aquatic-wildlife.html">Aquatic Wildlife</a>
-                    <a href="land-wildlife.html">Land Wildlife</a>
+                    <a href="animals.html">Animals</a>
+                    <a href="plants.html">Plants</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -47,11 +174,82 @@
 
     </div>
 
-    <h2>Header 2</h2>
+    <div class="grid-container">
 
-    <div class="footer">
-        Created by &copy; Tess Morgan
+        <div class="grid-item main-img">
+            <div class="hero-text">
+                <h1 style="color: rgb(18, 23, 69);">Environment in the PNW</h1>
+                <p>Importance, Action, & Beauty</p>
+            </div>
+            <!-- https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+        </div>
+
+
+
+
+        <div class="grid-item main1"> <h2>Introduction</h2><p class="para">Washington is an amazing state full of beautiful scenery from mountain ranges, and bodies of water, forest, beaches, and much more. Our state values to keep our air and water clean and reducing waste so future generations will continue to enjoy a healthy, safe, and clean city. Unfortunately, do to our rise in population over time our impacts to the environment rise as well. Heavy city traffic emits carbon emission into our air and bodies of water have been suffering do to our waste. This is a call to action urgently requesting upon the residents of Seattle to learn about the beautiful state we live in, acknowledge our impacts, and gain insight into how to reduce and fight back against the war to save our state. </p></div>
+        <div class="grid-item side-image"></div>
+        <div class="grid-item supportsect1"> Timeline <!--make diff size -->PNW's Environmental History</div>
+        <div class="grid-item supportsect2"> Importance <p class="para2">Humans depend on our Earth to survive. It is a necessity, not something we just have. This is the only home humans have and that's why it is essential to bring up environmental issues. Often, humans undermine how much we rely on our Earth to survive. Nowadays when you think of where your food comes from you think of the grocery store, you feel air blowing on your face while you're lounging on the coach from your air conditioning, and your water is dispensed from your refrigerator. We forgot where our necessities needed for survival actual come from. Our own actions are coming with consequences. Fate of humanity is determined by how we address these issues and our next moves as a society.</p></div>
+        <div class="grid-item main2"> What is Environmental Justice? <p>
+            <p id='demo' style='display: none'>It's a term and movement to fight against the reality that vulnerable and marginalized communities are far more likely to experience pollution and contamination at a disproportionate level. People of color, poor people, and others are more likely to live near hazardous waste facilities, have lead contamination in the water, mold in public and private buildings, and so much more</p>     
+            <button type='button' onclick="toggleText()" class="button">Click to Find Out!</button>
+            <hr>
+            <p id='video' style='display: none'><iframe width="448" height="252" src="https://www.youtube.com/embed/30xLg2HHg8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>     
+            <button type='button' onclick="toggleVideo()" class="button">Click to Watch!</button>
+            
+        </p></div>
+        <div class="grid-item sidenav">
+            <h3>Further Resources</h3>
+            <p class="para"> If you're interested in learning more about the Environment in the PNW and Environmental Justice:</p>
+            <p class="para"><a href="https://www.seattle.gov/environment/environmental-progress/healthy-environment" target="_blank">Seattle Gov:</a> basic environmental information</p>
+            <p class="para"><a href="https://animalsofpnw.com/2020/09/16/environmental-justice/" target="_blank">Animals of PNW:</a> more info on Environmental Justice</p>
+            <p class="para"><a href="https://www.nature.org/en-us/about-us/where-we-work/united-states/oregon/stories-in-oregon/how-climate-change-will-impact-the-pacific-northwest/" target="_blank">The Nature Conservancy:</a> learn how climate change is impacting the PNW and what you can expect if we don't take action</p>
+        </div>
+
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="images/fogvalley.jpg" class="slide" width="500" height="300" />
+              <img src="images/gasemission.png" class="slide" width="500" height="300" />
+              <img src="images/healthmap.webp" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
+          </div>
     </div>
+
+    <div class="footer">Created by &copy; Tess Morgan</div>
+
+    <script>
+        function toggleText() {
+  var text = document.getElementById("demo");
+    document.getElementById("demo").style.fontSize='16px';
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+function toggleVideo() {
+  var text = document.getElementById("video");
+    document.getElementById("video").style.fontSize='16px';
+  if (text.style.display === "none") {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+       
+    </script>
+
+    
+      
 </body>
 
 </html>
