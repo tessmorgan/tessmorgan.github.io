@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- How did I challenge myself? -->
+<!-- I challenged myself by using new javascript functions and using the CSS grid feature, which I am not completely comfortable using yet. I have found the CSS grid confusing at times, and since our group decided that each person would make their own CSS grid for their individual pages, I was able to challenge myself by creating and using this grid for my two pages. I've also found javascript functinos quite confusing in terms of the code and formatting. So I tried a new function that we didn't use in calss to make an image appear when a button was clicked. This took me a little while to figure out, since I couldn't find a tutorial on W3Schools. But after assimilating my previously used javascript functions and knowledge, I was able to use this function multiple times in one of my pages!-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animals of the PNW</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
     <style>
         .grid-container {
             display: grid;
@@ -21,6 +25,8 @@
             font-size: 17px;
             padding: 30px;
             border-radius: 15px;
+            font-size: 20px;
+
         }
 
         .header {
@@ -34,7 +40,7 @@
         }
 
         .main-image {
-            grid-column: 1 / span 5;
+            grid-column: 1 / span 3;
             grid-row: 1;
             background-image: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0.323)), url(images/wildlife/land-wildlife-1.jpg);
             /*NEW FEATURE* Hazel showed me this feature that allows the image set as the background to a grid section to have a darker gradient so that white text overlays visibly*/
@@ -42,7 +48,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            height: 400px;
+            height: 300px;
 
         }
 
@@ -56,19 +62,19 @@
         }
 
         .main1 {
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 2;
             grid-row: 2;
         }
 
         .main2 {
-            grid-column: 1 / span 4;
-            grid-row: 4;
+            grid-column: 1 / span 2;
+            grid-row: 5;
         }
 
 
         .sidenav {
-            grid-column: 5;
-            grid-row: 2 / span 3;
+            grid-column: 3;
+            grid-row: 2 / span 4;
         }
 
         .support-section1 {
@@ -77,8 +83,8 @@
         }
 
         .support-section2 {
-            grid-column: 3 / span 2;
-            grid-row: 3;
+            grid-column: 1 / span 2;
+            grid-row: 4;
         }
 
         table,
@@ -92,6 +98,19 @@
 
         tr:hover {
             background-color: rgb(10, 94, 55);
+        }
+
+        .side-resources {
+            background-color: rgb(38, 84, 67);
+        }
+
+        .side-resources li a {
+            color: rgb(35, 184, 174);
+            text-align: center;
+        }
+
+        .side-resources li a:hover {
+            color: rgb(127, 234, 226);
         }
     </style>
 </head>
@@ -243,13 +262,27 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
-        <div class="grid-item sidenav">
+        <div class="grid-item sidenav side-resources">
             <h1>Further Resources:</h1>
             <ol>
-                <li>__: <a href="" target="_blank">___</a></li>
+                <li><a href="https://www.washington.edu/news/2021/07/29/human-wildlife-conflict-climate/"
+                        target="_blank">University of Washington:</a> climate change affecting human-wildlife
+                    interaction and conflict.</li>
+                <br>
+                <li><a href="http://www.landscope.org/washington/priorities/wa_swap/" target="_blank">Landscope:</a>
+                    Information on the Washington State Wildlife Action Plan</li>
+                <br>
+                <li><a href="https://earthjustice.org/blog/2018-august/orcas-dying-puget-sound-endangered-species-salmon"
+                        target="_blank">Earth Justice:</a> Puget
+                    Sound Orcas:</a> more on the endangerement of Puget Sound orcas, the species itself, and the
+                    government's work to protect the species.</li>
             </ol>
         </div>
     </div>
+
+    <br>
+    <br>
+
     <div>
         <div class="footer">
             Created by &copy; Lexi Kelley
@@ -261,7 +294,6 @@
             src = 'images/salmon.jpg';
             salmonImage.style.display = 'block'
             salmonImage.style.width = '300px'
-            /*NEW FEATURE* I tried using a button to make an image appear! Used multiple times, as seen below*/
         }
         function PSorcas() {
             let orcasImage = document.getElementById('orcas')

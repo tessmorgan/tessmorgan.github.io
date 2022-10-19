@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PNW Land Wildlife</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
     <style>
         .grid-container {
             display: grid;
@@ -24,25 +25,25 @@
         }
 
         .header {
-            grid-column: 1 / span 3;
+            grid-column: 1 / span 4;
             grid-row: 2;
         }
 
         .navmenu {
-            grid-column: 1 / span 3;
+            grid-column: 1 / span 4;
             grid-row: 1;
         }
 
         .main-image {
-            grid-column: 1 / span 5;
+            grid-column: 1 / span 4;
             grid-row: 1;
             background-image: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0.323)), url(images/wildlife/forests.webp);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            height: 400px;
-
+            height: 300px;
+            font-size: 20px;
         }
 
         .title1 {
@@ -55,28 +56,23 @@
         }
 
         .main1 {
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 3;
             grid-row: 2;
         }
 
         .main2 {
-            grid-column: 3 / span 2;
+            grid-column: 1 / span 3;
             grid-row: 4;
         }
 
         .sidenav {
-            grid-column: 5;
+            grid-column: 4;
             grid-row: 2 / span 3;
         }
 
         .support-section1 {
-            grid-column: 1 / span 4;
+            grid-column: 1 / span 3;
             grid-row: 3;
-        }
-
-        .support-section2 {
-            grid-column: 1 / span 2;
-            grid-row: 4;
         }
 
         table,
@@ -85,12 +81,25 @@
             border-collapse: collapse;
             border-color: rgb(4, 58, 40);
             text-align: center;
-            padding: 20px;
+            padding: 10px;
         }
 
         tr:hover {
             background-color: rgb(10, 94, 55);
             /*NEW FEATURE* I've never tried changing the color of a table row when the cursor hovers over it, and I thought it was a cool feature to try :)*/
+        }
+
+        .side-resources {
+            background-color: rgb(38, 84, 67);
+        }
+
+        .side-resources li a {
+            color: rgb(35, 184, 174);
+            text-align: center;
+        }
+
+        .side-resources li a:hover {
+            color: rgb(127, 234, 226);
         }
     </style>
 </head>
@@ -145,70 +154,52 @@
         </div>
         <div class="grid-item support-section1">
             <h1>Threatened Species</h1>
-            <p>The PNW's marine animals has been on a heavy decline as marine debris, overfishing, and hunting has
-                increased
-                leading to suffering marine ecosystems. Below are some examples of these endangered marine species:</p>
+            <p>Below are some examples of endangered or threatened plant species:</p>
             <table>
                 <tr>
-                    <td>Chinook Salmon</td>
-                    <td>Chinook salmon populations in the Pacific Northwest have been on an intense decline since the
-                        late 1900's as rates
-                        overfishing,
-                        habitat loss and destruction, and climate change has risen.
-                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/salmon.jpg"
-                                id="salmon"></img></p>
-                        <button style="text-align: center;" onclick="Chinooksalmon()">Click
-                            to see Chinook Salmon!</button>
+                    <td>The Golden Paintbrush ("Castilleja levisecta")</td>
+                    <td>The "Golden Paintbrush" is a rare flowering plant of 11 known populations.
+                        <p style="text-align:center;"><img style="width:60%"
+                                src="images/wildlife/goldenpaintbrush.jpg"></img></p>
                     </td>
                 </tr>
                 <tr>
-                    <td>Puget Sound Orcas</td>
-                    <td>The Pugest Sound Orca population has been declining. In the 1960s to 1970's, these orcas were a
-                        main target to be captured to live in Sea World, causing a huge decimation in their population.
-                        Since, the Puget Sound orca population has only continued dropping. There have been less orcas
-                        to reproduce, and the remaining ones still face capture or
-                        hunting, as well as increasing loss of their main food source: salmon.
-                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/orcas.jpg"
-                                id="orcas"></img></p>
-                        <button style="text-align: center;" onclick="PSorcas()">Click
-                            to see Puget Sound orcas!</button>
+                    <td>Showy Stickseed ("Hackelia bella")</td>
+                    <td>"Showy Stickseed" is a species of flowering plant native to Washington, with only one
+                        small known population globally.
+                        <p style="text-align:center;"><img style="width:60%" src="images/wildlife/stickseed.png"></img>
+                        </p>
                     </td>
                 </tr>
                 <tr>
-                    <td>Steller Sea Lions</td>
-                    <td>For centuries, Steller Sea Lions have been victim to hunting for their fur and oil resources.
-                        Still victim to the dangers of hunting, pollution, and habitat destruction and loss, Steller Sea
-                        Lions are listed as an endangered species.
-                        <p style="text-align:center;"><img style="display:none" src="images/wildlife/sealion.jpg"
-                                id="sealion"></img></p>
-                        <button style="text-align: center;" onclick="SSeaLion()">Click
-                            to see Steller Sea Lions!</button>
+                    <td>The Willamette daisy ("Erigeron decumbens")</td>
+                    <td>The Willamette daisy is a species of flowering plant that struggles primarily with habitat loss
+                        as a result of urban and agricultural development.
+                        <p style="text-align:center;"><img style="width:60%" src="images/wildlife/daisy.jpg"></img></p>
                     </td>
                 </tr>
             </table>
         </div>
-        <div class="grid-item support-section2">
-            <h1>Deforestation</h1>
-            <p>The PNW's terrestrial animals have historically faced issues like loss of habitat from
-                deforestation,
-                hunting, and more that have caused many species to be declared endangered.Below are some examples of
-                these endangered species:</p>
-        </div>
+
         <div class="grid-item main2">
             <h1>What is Already Being Done?</h1>
-            <p id="gov"></p>
-            <button onclick="document.getElementById('gov').innerHTML= 'Congress passed the Endangered Species Act in 1973, which declared the US federal government responsibility to protect endangered species and habitats in the country. To implement the ESA, other federal agencies were created such as: the US Fish and Wildlife Service, the US National Oceanic and Atmospheric Administration Fisheries Service, and more!'; 
-                document.getElementById('gov').style.display='block'">Click
+            <p id="esa"></p>
+            <button class="button" onclick="ESA()">Click
                 to find out!</button>
         </div>
-        <div class="grid-item sidenav">
+        <div class="grid-item sidenav side-resources">
             <h1>Further Resources:</h1>
             <ol>
                 <li><a href="https://www.epa.gov/laws-regulations/summary-endangered-species-act" target="_blank">The
-                        ESA:</a> a summary of the Endangered Species Act.</li>
-                <li><a href="https://www.epa.gov/laws-regulations/summary-endangered-species-act" target="_blank">Puget
-                        Sound Orcas:</a> more on the endangerement of Puget Sound orcas, the species itself, and the
-                    government's work to protect the species.</li>
+                        EPA Gov:</a> a summary of the Endangered Species Act.</li>
+                <br>
+                <li><a href="https://www.fs.usda.gov/detail/r6/plants-animals/plants/?cid=stelprdb5282984"
+                        target="_blank">USDA Gov:</a> More on threatened, endangered, and sensitive plants.</li>
+                <br>
+                <li><a href="https://www.wnps.org/rare-native-plants" target="_blank">WNPS.org:</a> Definitions of
+                    endangered, threatened, and sensitive plant species. Also provides agencies and organizations in
+                    Washington and the US Government working towards protecting these species.</li>
+
             </ol>
         </div>
     </div>
@@ -217,43 +208,15 @@
             Created by &copy; Lexi Kelley
         </div>
     </div>
+
+    <br>
+    <br>
+
     <script>
-        function Chinooksalmon() {
-            let salmonImage = document.getElementById('salmon')
-            src = 'images/salmon.jpg';
-            salmonImage.style.display = 'block'
-            salmonImage.style.width = '300px'
-            /*NEW FEATURE* I tried using a button to make an image appear! Used multiple times, as seen below*/
-        }
-        function PSorcas() {
-            let orcasImage = document.getElementById('orcas')
-            src = 'images/orcas.jpg';
-            orcasImage.style.display = 'block'
-            orcasImage.style.width = '300px'
-        }
-        function SSeaLion() {
-            let sealionImage = document.getElementById('sealion')
-            src = 'images/sealion.jpg';
-            sealionImage.style.display = 'block'
-            sealionImage.style.width = '300px'
-        }
-        function pygmyrabbit() {
-            let rabbitImage = document.getElementById('rabbit')
-            src = 'images/rabbit.jpg';
-            rabbitImage.style.display = 'block'
-            rabbitImage.style.width = '300px'
-        }
-        function Graywolf() {
-            let wolfImage = document.getElementById('wolf')
-            src = 'images/wolf.jpg';
-            wolfImage.style.display = 'block'
-            wolfImage.style.width = '300px'
-        }
-        function NSOwl() {
-            let owlImage = document.getElementById('owl')
-            src = 'images/owl.jpg';
-            owlImage.style.display = 'block'
-            owlImage.style.width = '300px'
+        function ESA() {
+            let ESAparagraph = document.getElementById('esa')
+            ESAparagraph.innerHTML = 'Congress passed the Endangered Species Act in 1973, which declared the US federal government responsibility to protect endangered species and habitats in the country. To implement the ESA, other federal agencies were created such as: the US Fish and Wildlife Service, the US National Oceanic and Atmospheric Administration Fisheries Service, and more!';
+            ESAparagraph.style.display = 'block'
         }
     </script>
 </body>
