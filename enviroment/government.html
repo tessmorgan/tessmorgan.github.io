@@ -149,24 +149,34 @@
         </div>
         <div class="grid-item sidenav">
             <h2>Resources:</h2>
-            <p id="secret"></p>
-            <button class="button"
-                onclick="document.getElementById('secret') .innerHTML='meow'; document.getElementById('secret').style.display='block'">
-                Click here to see Resources</button>
-            <button class="button" onclick="document.getElementById('secret').style.display='none'">Click here to hide
-                Resources</button>
+            <p></p>
         </div>
         <div class="grid-item support1">
             <h2>Reducing Emissions</h2>
-            <p></p>
-            <button class="button" onclick="Chinooksalmon()">Click
-                here to see a picture of the action!</button>
+            <p>Gov. Inslee signed several policies ensuring that Washington state is doing
+                its part to reduce emissions and restore the envionrment. As of November 2020, Washington's
+                clean energy industry employed over 85,000 workers and accounts for more than 25% of all construction
+                jobs in the state.
+            </p>
+            <p id="hidden"></p>
+            <button class="button"
+                onclick="document.getElementById('hidden') .innerHTML='Inslee established Washington state as a global leader of subnational governments dedicated to climate action. He also co-founded the bipartisan U.S. Climate Alliance and the International Ocean Acidification Alliance, and helped lead the Pacific Coast Collaborative and Under2 Coalition.'; document.getElementById('hidden').style.display='block'">
+                Click here to see further details about Inslee!</button>
         </div>
         <div class="grid-item support2">
             <h2>Funding Land Conservation Efforts</h2>
-            <p></p>
-            <button class="button" onclick="Chinooksalmon()">Click
-                here to see a picture of the action!</button>
+            <p>The Washington state Government funds a program called "the Washington Wildlife and Recreation Program".
+                The goal of this program is to protect the enviornment in two main ways: acquiring valuable recreation
+                and habitat lands before they are lost and developing recreation areas for a growing population. The
+                government funding is used towards a broad range of land conservation efforts, inclduing protection of
+                the
+                natural areas near big cities to the protection of very rare, last remaining plant species in the world.
+            </p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 50%;" src="images/land.jpg" id="land"></img></p>
+            <button class="button" onclick="ProtectedLand()">Click
+                here to see a picture of the land that is being protected!</button>
         </div>
     </div>
 
@@ -175,12 +185,12 @@
     </div>
 
     <script>
-        function Chinooksalmon() {
-            let salmonImage = document.getElementById('salmon')
-            src = 'images/salmon.jpg';
-            salmonImage.style.display = 'block'
-            salmonImage.style.width = '300px'
+        function ProtectedLand() {
+            let landImage = document.getElementById('land')
+            src = 'images/land.jpg';
+            landImage.style.display = 'block'
             /*I used a button to make an image appear*/
+
         }
     </script>
 </body>
