@@ -1,3 +1,7 @@
+<!-- I challenged myself in this project by putting a great amount of effort into my css by having all of my colors 
+    and text correspond to each other throughout my webpages and have everything look aesthetically pleasing to 
+    fit the overall theme of the website (environment). My goal was to make my web pages look clean, 
+    somewhat educational, fun, and nature-esque to keep up with the environmental aspect/topic. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,23 +11,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Governemnt Action</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
     <style>
         .grid-container {
             display: grid;
             grid-gap: 10px;
             grid-template-columns: auto auto auto;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         .grid-item {
-            background-color: lightblue;
             text-align: center;
-            font-size: 30px;
+            font-size: 17px;
+            padding: 30px;
+            border-radius: 15px;
         }
 
         .main-image {
             grid-column: 1 /span 3;
             grid-row: 2;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("images/government.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/government.jpg");
+            /*I used the "linear-gradient" that makes the background image in the grid to have a darker gradient to make the white text over it more visible*/
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -47,7 +56,7 @@
         .sidenav {
             grid-column: 3;
             grid-row: 3/ span 3;
-            background-color: red;
+            background-color: rgb(38, 84, 67);
         }
 
         .support1 {
@@ -67,7 +76,14 @@
             padding: 20px;
         }
 
-        #title1 {}
+        .title1 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
     </style>
 </head>
 
@@ -108,23 +124,104 @@
 
     <div class="grid-container">
         <div class="grid-item main-image">
-            <h1 id="title1">Current
-                Government Action</h1>
+            <div class="title1">
+                <h1>Current Government Action</h1>
+                <p>How the Government is Taking Action to Protect the Environment</p>
+            </div>
         </div>
-        <div class="grid-item main1">Main 1 Content</div>
-        <div class="grid-item main2">Main 2 Content</div>
-        <div class="grid-item sidenav">Side Nav</div>
-        <div class="grid-item support1">Support Section 1</div>
-        <div class="grid-item support2">Support Section 2</div>
+        <div class="grid-item main1">
+            <h2>Importance of Power that a State's Government Holds</h2>
+            <p>A state's government possesses a great amount of power that can be put to good use. They are able to
+                create policies on commerce, taxation, healthcare, education, and many other
+                issues within their state. There is a wide range of possibilities of how the government can put these
+                specific means to use (including helping the environment); and it is important that they make use of
+                this power and do the most with it because if they don't there would be no change.</p>
+        </div>
+        <div class="grid-item main2">
+            <h2>What is the Washington Department of Ecology and What do They do to Help the Environment?</h2>
+            <p class="small-text" style="text-align: left;">The Washington Department of Ecology has a goal of
+                protecting, perserving, and
+                enhancing the environment.
+                They do so by doing a various amount of actions presented in this video:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=cV3Q7_ne-tY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="grid-item sidenav">
+            <h2>Further Resources:</h2>
+            <table>
+                <tr>
+                    <th>Link</th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td><a style="color:rgb(35, 184, 174)"
+                            href="https://www.governor.wa.gov/issues/issues/energy-environment"
+                            target="_blank">governor.wa.gov</a></td>
+                    <td>Reducing Emissions</td>
+                </tr>
+                <tr>
+                    <td><a style="color:rgb(35, 184, 174)"
+                            href="https://rco.wa.gov/grant/washington-wildlife-and-recreation-program-habitat/"
+                            target="_blank">rco.wa.gov</a></td>
+                    <td>Land Conservation</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-item support1">
+            <h2>Reducing Emissions</h2>
+            <p>Gov. Inslee signed several policies ensuring that Washington state is doing
+                its part to reduce emissions and restore the environment. As of November 2020, Washington's
+                clean energy industry employed over 85,000 workers and accounts for more than 25% of all construction
+                jobs in the state.
+            </p>
+            <p id="hidden"></p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 50%;" src="images/inslee.jpg" id="inslee"></img></p>
+            <button class="button"
+                onclick="document.getElementById('hidden') .innerHTML='Inslee established Washington state as a global leader of subnational governments dedicated to climate action. He also co-founded the bipartisan U.S. Climate Alliance and the International Ocean Acidification Alliance, and helped lead the Pacific Coast Collaborative and Under2 Coalition.'; document.getElementById('hidden').style.display='block';InsleePicture()">
+                Click here to see further details about Inslee!</button>
+            <!--I assigned two functions to one onclick in this button-->
+        </div>
+        <div class="grid-item support2">
+            <h2>Funding Land Conservation Efforts</h2>
+            <p>The Washington state Government funds a program called "the Washington Wildlife and Recreation Program".
+                The goal of this program is to protect the environment in two main ways: acquiring valuable recreation
+                and habitat lands before they are lost and developing recreation areas for a growing population. The
+                government funding is used towards a broad range of land conservation efforts, inclduing protection of
+                the
+                natural areas near big cities to the protection of very rare, last remaining plant species in the world.
+            </p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 50%;" src="images/land.jpg" id="land"></img></p>
+            <button class="button" onclick="ProtectedLand()">Click
+                here to see a picture of the land that is being protected!</button>
+        </div>
     </div>
-
-    <h1>Government</h1>
-    <h2>Reducing Emissions</h2>
-    <h2>Funding Land Conservation Efforts</h2>
 
     <div class="footer">
         Created by &copy; Abigail Weilbacher
     </div>
+
+    <script>
+        function InsleePicture() {
+            let landImage = document.getElementById('inslee')
+            src = 'images/inslee.jpg';
+            landImage.style.display = 'block'
+            /*I used a button to make an image appear*/
+
+        }
+        function ProtectedLand() {
+            let landImage = document.getElementById('land')
+            src = 'images/land.jpg';
+            landImage.style.display = 'block'
+            /*I used a button to make an image appear*/
+
+        }
+    </script>
 </body>
 
 </html>

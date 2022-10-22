@@ -12,7 +12,7 @@
         .grid-container {
             display: grid;
             grid-gap: 10px;
-            grid-template-columns: auto auto auto auto auto;
+            grid-template-columns: 18% 20% 20% 20% 18%;
         }
         
         .grid-item {
@@ -33,29 +33,24 @@
             height: 300px;
         }
         
-        .why {
-            grid-column: 1 /span 2;
-            grid-row: 3 /span 2;
-        }
-        
         .video {
-            grid-column: 1 /span 4;
-            grid-row: 2;
+            grid-column: 3/span 3;
+            grid-row: 3;
         }
         
         .what {
-            grid-column: 3 /span 2;
-            grid-row: 3 /span 2;
+            grid-column: 1/span 3;
+            grid-row: 2;
         }
         
         .resources {
-            grid-column: 5;
-            grid-row: 2 /span 2;
+            grid-column: 1 /span 2;
+            grid-row: 3;
         }
         
         .facts {
-            grid-column: 5;
-            grid-row: 4;
+            grid-column: 4 /span 2;
+            grid-row: 2;
         }
         
         * {
@@ -168,6 +163,7 @@
             background-color: rgb(4, 58, 40);
             padding: 20px;
             margin: 20px;
+            box-shadow: 1px 2px 20px 5px lightslategray;
         }
         
         button a {
@@ -223,7 +219,10 @@
                 <p>Learn about the process of recycling in Seattle</p>
             </div>
         </div>
-        <div class="grid-item video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFlsjRXbnSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="grid-item video">
+            <p>click to watch a video on how recycling works</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/b7GMpjx2jDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div class="grid-item resources">
             <h1>Resources</h1>
             <button> <a href="https://www.seattle.gov/utilities/your-services/collection-and-disposal/recycling" target="_blank">Seattle Utilities on recyclilng</a> </button>
@@ -234,7 +233,7 @@
 
 
         </div>
-        <div class="grid-item why">Why</div>
+
         <div class="grid-item what">What can you recycle in Seattle?
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -282,13 +281,24 @@
                 <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
-        <div class="grid-item facts">Facts and Figures</div>
+        <div class="grid-item facts">Facts and Figures
+
+            <p style="font-size:15px">here is some unique info on Seattle recycling</p>
+
+            <ol style="text-align:left; font-size:25px;">
+                <li>28% is recycled in Seattle, 38% is recycled in the Northwest and North America, and 34% is recycled in Asia</li>
+                <br>
+                <li>Every year Americans throw away enough office paper to build a 12-foot wall from Seattle to New York</li>
+                <br>
+                <li>It takes as few as 30 days for a glass container to go from a recycling bin to being back on the shelf</li>
+            </ol>
+        </div>
 
 
     </div>
 
     <div class="footer">
-        <p>Made by Sara Dunnigan</p>
+        Made by Sara Dunnigan
     </div>
 
 
