@@ -7,6 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Action</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .grid-item {
+            text-align: center;
+            font-size: 17px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .main-image {
+            grid-column: 1 /span 3;
+            grid-row: 2;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)), url("images/personal.jfif");
+            /*I used the "linear-gradient" that makes the background image in the grid to have a darker gradient to make the white text over it more visible*/
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 100px;
+            border: 3px;
+            border-style: solid;
+
+        }
+
+        .main1 {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+        }
+
+        .main2 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+        }
+
+        .sidenav {
+            grid-column: 3;
+            grid-row: 3/ span 3;
+            background-color: rgb(38, 84, 67);
+        }
+
+        .support1 {
+            grid-column: 1 / span 1;
+            grid-row: 4;
+        }
+
+        .support2 {
+            grid-column: 2 / span 1;
+            grid-row: 4;
+        }
+
+        .grid-item2 {
+            background-color: rgb(216, 216, 216);
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .title1 {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,7 +91,7 @@
                 <a class="dropbtn">Wildlife</a>
                 <div class="dropdown-content">
                     <a href="animals.html">Animals</a>
-                    <a href="plants.html">PLants</a>
+                    <a href="plants.html">Plants</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -44,13 +118,106 @@
         </ul>
     </div>
 
-    <h1>Personal</h1>
-    <h2>Donate</h2>
-    <h2>Volunteer</h2>
+    <div class="grid-container">
+        <div class="grid-item main-image">
+            <div class="title1">
+                <h1>Personal Action</h1>
+                <p>How You and the People Around You Can Take Action to Protect the Environment</p>
+            </div>
+        </div>
+        <div class="grid-item main1">
+            <h2>Importance of Particpating in Helping the Environment</h2>
+            <p>Any amount of help is important for the environment. Even if you are only able to do something "small",
+                if
+                everyone does it, it creates something big. There are many things that anyone can do on a day to
+                day basis that could change the planet forever.</p>
+        </div>
+        <div class="grid-item main2">
+            <h2>Why is it Important for a Community to Work Together During a Crisis?</h2>
+            <p class="small-text" style="text-align: left;">The impacts that are currently effecting the environment are
+                becoming very concerning. If we, as a community, don't work together to try to combat it nothing might
+                happen. Watch this video to see why:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=LG2maTqCqOw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="grid-item sidenav">
+            <h2>Further Resources:</h2>
+            <table>
+                <tr>
+                    <th>Link</th>
+                    <th>Topic</th>
+                </tr>
+                <tr>
+                    <td><a style="color:rgb(35, 184, 174)"
+                            href="https://greatnonprofits.org/org/seattle-tilth-association-inc"
+                            target="_blank">greatnonprofits.org</a></td>
+                    <td>Donating</td>
+                </tr>
+                <tr>
+                    <td><a style="color:rgb(35, 184, 174)"
+                            href="https://triadrivertours.com/river-research/fnc9lwm825xt835wks8dddxyznbta3"
+                            target="_blank">triadrivertours.com</a></td>
+                    <td>Volunteering</td>
+                </tr>
+            </table>
+        </div>
+        <div class="grid-item support1">
+            <h2>Donating</h2>
+            <p>It is important to donate when you can. There are many organizations out there that want to
+                help the
+                environment but can't because they don't have enough funds to afford it. Even donating a tiny
+                amount
+                can
+                create
+                change in helping these programs pursue what they need to do to help the environment.
+            </p>
+            <p id="hidden"></p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 60%;" src="images/donate.JPG" id="donate"></img></p>
+            <button class="button"
+                onclick="document.getElementById('hidden') .innerHTML='The Nature Conservancy, Ocean Conservancy, Washington Green Schools, and Seattle Tilth Association Inc!'; document.getElementById('hidden').style.display='block'; DonatePicture()">
+                Click here to see organizations you can donate to!</button>
+            <!--I assigned two functions to one onclick in this button (again below)-->
+        </div>
+        <div class="grid-item support2">
+            <h2>Volunteering</h2>
+            <p>Volunteering is a very significant way that you can help the environment and the community around you
+                without spending any money.
+                There are many organizations that are in need of and ask for volunteers to help contribute to their
+                goals of protecting and restoring the environment. Even just one extra volunteer provides a great amount
+                of help to any
+                organization that needs it.
+            </p>
+            <p id="hidden2"></p>
+            <p><img style="display:none; margin-left: auto;
+                margin-right: auto;
+                width: 40%;" src="images/volunteer.jpeg" id="volunteer"></img></p>
+            <button class="button"
+                onclick="document.getElementById('hidden2') .innerHTML='Skagit Marine Resources Committee, Student Conservation Association, Washington Trails Association, and Hood Canal Salmon Enhancement Group!'; document.getElementById('hidden').style.display='block'; VolunteerImage()">
+                Click here to see local places you can volunteer at!</button>
+        </div>
+    </div>
 
     <div class="footer">
         Created by &copy; Abigail Weilbacher
     </div>
+
+    <script>
+        function DonatePicture() {
+            let landImage = document.getElementById('donate')
+            src = 'images/donate.jpg';
+            landImage.style.display = 'block'
+        }
+
+        function VolunteerImage() {
+            let landImage = document.getElementById('volunteer')
+            src = 'images/volunteer.jpeg';
+            landImage.style.display = 'block'
+        }
+    </script>
 </body>
 
 </html>

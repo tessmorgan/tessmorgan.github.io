@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- How I challenged myself: I would definitly say I challenged myself when building this website. I had lots of issues getting the grid to work properly and I was able to work through them and make a working grid. By far the most challenging part of this project was the slideshow I made on each page, I had to stretch my skills in javascript (using new concepts such as n and let,if,for) and css (next and previous buttons) to get it to work. It took lots of problem solving and I was able to get it to work. I also added more basic new features such as box shadows behind my buttons. I would definitly say I challenged myself oon this webstie and learned a lot. :)-->
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compost</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fpl3roh.css">
+
+
 
     <style>
         .grid-container {
@@ -33,9 +39,9 @@
             height: 300px;
         }
         
-        .why {
-            grid-column: 1;
-            grid-row: 3 /span 2;
+        .history {
+            grid-column: 1/span 5;
+            grid-row: 5 /span 2;
         }
         
         .video {
@@ -44,18 +50,18 @@
         }
         
         .what {
-            grid-column: 2 /span 3;
+            grid-column: 1 /span 3;
             grid-row: 3 /span 2;
         }
         
         .resources {
             grid-column: 4 /span 2;
-            grid-row: 2;
+            grid-row: 4;
         }
         
         .facts {
-            grid-column: 5;
-            grid-row: 3 /span 2;
+            grid-column: 4 /span 2;
+            grid-row: 2 /span 2;
         }
         
         * {
@@ -162,18 +168,35 @@
             font-weight: bold;
             background-color: rgba(0, 0, 0, 0.8);
         }
+        /*new box shadow*/
         
         button {
             display: block;
             background-color: rgb(4, 58, 40);
             padding: 20px;
             margin: 20px;
+            box-shadow: 1px 2px 20px 5px lightslategray;
         }
         
         button a {
             text-decoration: none;
             color: white;
             font-size: 20px;
+        }
+        
+        th {
+            background-color: #45625D;
+        }
+        
+        table {
+            border: 2px solid white;
+            text-align: center;
+            background-color: rgb(166, 211, 214);
+        }
+        
+        td {
+            border: 2px solid white;
+            padding: 10px;
         }
     </style>
 </head>
@@ -223,7 +246,9 @@
                 <p>Learn about the process of composting in Seattle</p>
             </div>
         </div>
-        <div class="grid-item video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFlsjRXbnSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="grid-item video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFlsjRXbnSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p style="font-size:15px">click for a quick background on why composting is good for the environment.</p>
+        </div>
         <div class="grid-item resources">
             <h1>Resources</h1>
             <button> <a href="https://www.seattle.gov/utilities/your-services/collection-and-disposal/food-and-yard" target="_blank">Seattle Utilities on composting</a> </button>
@@ -232,7 +257,40 @@
 
 
         </div>
-        <div class="grid-item why">Why</div>
+        <div class="grid-item history">
+            <h2>History of composting in Seattle</h2>
+            <table>
+                <tr>
+                    <th>year</th>
+                    <th>act</th>
+                </tr>
+                <tr>
+                    <td>1988</td>
+                    <td>Seattle prohibited yard waste from the garbage</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Seattle prohibited recyclables from the garbage</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Seattle began curbside food waste collection</td>
+                </tr>
+                <tr>
+                    <td>2009</td>
+                    <td>Seattle required all residential properties to either subscribe to food and yard waste collection or participate in backyard composting</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>Required multi-family buildings required to provide compost collection service to residents</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>Seattle prohibited food waste from the garbage</td>
+                </tr>
+            </table>
+
+        </div>
         <div class="grid-item what">What can you compost in your Seattle Yard waste bin?
             <div class="slideshow-container">
                 <div class="mySlides fade">
@@ -282,9 +340,14 @@
         </div>
         <div class="grid-item facts">Facts and Figures
 
-            <ol>
+            <p style="font-size:15px">here is some unique info on Seattle composting</p>
+
+            <ol style="font-size: 25px; text-align: left;">
                 <li>More than 30% of garbage is food waste that could have been composted</li>
-                <li></li>
+                <br>
+                <li>Seattle requires all residential properties to either subscribe to a yard waste collection program or do backyard composting</li>
+                <br>
+                <li>Seattle is one of the best cities in the country at composting</li>
             </ol>
         </div>
 
