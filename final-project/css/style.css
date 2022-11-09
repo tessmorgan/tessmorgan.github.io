@@ -1,0 +1,144 @@
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background-image: url("images/background3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .masthead h1, .masthead .h1 {
+    font-family: questa-grande, serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 2.5rem;
+    letter-spacing: 0.5rem;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  .masthead h2, .masthead .h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) {
+    .masthead h1, .masthead .h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .masthead {
+      height: 100vh;
+      padding: 0;
+    }
+    .masthead h1, .masthead .h1 {
+      font-size: 6.5rem;
+      line-height: 6.5rem;
+      letter-spacing: 0.8rem;
+    }
+    .masthead h2, .masthead .h2 {
+      max-width: 30rem;
+      font-size: 1.25rem;
+    }
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .h1{
+    font-family: questa-grande, serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  .mainNav{
+    font-family: cardo,serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p{
+    font-family: cardo,serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.btn-dark-moon {
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #295587b9, #0e2f6c97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.h2{
+    font-family: questa-grande,serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.h3{
+    font-family: cardo,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.bg-purple{
+    background-color: #beb4e1; 
+
+}
+
+.bg-purpletrans{
+    background-color: #ebe8f8c1; 
+
+}
+
+.contact-section {
+    padding-top: 5rem;
+  }
+  .contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #412f80;
+  }
+  .contact-section .card h4, .contact-section .card .h4 {
+    font-size: 0.8rem;
+    font-family: questa-grande,serif;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+  .contact-section .card hr {
+    border-color: #45396f;
+    border-width: 0.25rem;
+    width: 3rem;
+  }
+  .contact-section .social {
+    margin-top: 5rem;
+  }
+  .contact-section .social a {
+    text-align: center;
+    height: 1rem;
+    width: 1rem;
+    background: rgba(238, 231, 231, 0.895);
+    border-radius: 100%;
+    line-height: 1rem;
+    color: rgba(227, 17, 17, 0.3);
+  }
+  .contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .contact-section .social a:active {
+    color: rgb(245, 63, 63);
+  }
+  
+  .footer {
+    padding: 5rem 0;
+  }
