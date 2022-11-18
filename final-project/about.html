@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthlight</title>
+
+     <!-- Latest compiled and minified CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!--Css style sheet link-->
+     <link rel="stylesheet" href="css/style.css">
+ 
+     <!--Fonts 1-->
+     <link rel="stylesheet" href="https://use.typekit.net/swg2fsw.css">
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .bg-image{
+   background-image: url("images/background3.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 300px;
+   width: auto;
+}
+
+
+</style>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-fixed mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Earthlight Gems & Minerals</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="locations.html">Locations</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="schedule.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--End of Nav-->
+    <header class="masthead2">
+        <div class=" px-4 px-lg-4 d-flex h-100 align-items-center justify-content-center bg-image">
+            <div class="d-flex justify-content-center">
+                <div class="text-center p-5">
+                    <h1 class="p-3 mx-auto my-0 text-uppercase">About</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!--End of Title Slide -->
+
+<div class="container-fluid p-5 m-5 mx-auto bg-purple text-black border">
+    
+    <div class="row">
+    <div class="p-4 m-2 bg-purpletrans text-black">
+        <h2 class="h2 m-2">Our Story</h2>
+        <br>
+        <p class="p m-3"> 
+            Hi there, What's your name?
+
+            <button onclick="askName();">Enter Here!</button>
+            <p id="ask-name" class="p"></p>
+
+            <p class="p">
+                We have Rocks, Gems, Fossils, Minerals, Crystals, Books, tumblers, grit, polish, Jewelry of all kinds. Looking for the perfect gift or a completely unique piece of jewelry? We even have jewelers that can custom make jewelry to your specifications! We can can cut geodes, and offer some polishing. Everything from inexpensive fun stuff for kids, to one of a kind collector pieces for yourself or as a gift. If you love mother nature and one of a kind beautiful colors, patterns and shapes from all over the world, stop by Earthlight Rocks & Gems. 
+            </p>
+        </p>
+    </div>
+        
+        
+    </div>
+</div>
+   
+</div>
+<!--End of Our Story-->
+<section>
+
+<div class="container-fluid p-5 mx-auto bg-light text-black border">
+    <h2 class="h2">Things We Love:</h2>
+    
+    <div class="row">
+        <div class="col-md-3 how-img">
+            <img src="images/phantom.webp" alt="Dog" class="float-left m-3" style="height: 200px; width: auto;">
+        </div>
+        <div class="col-md-6 how-img p">
+            <p>We like our customer relationships just like how we like our products: Long-Lasting and made from love. Check out some of our fan favorites from this month!
+                <br>
+                <br>
+                On the left is a Phantom Quartz that is polished - $15
+                
+                <br>
+                On the right is the Titanium coated Clear Quartz Crystal cluster a.k.a. Aura Quartz - $32
+            </p>
+        </div>
+      
+       
+        <div class="col-md-3 how-img">
+            <img src="images/rainbow.jpg" alt="Dog" class="float-left m-3" style="height: 200px; width: auto;">
+        </div>
+    </div>
+</section>
+    <!-- Footer-->
+<footer class="footer container-fluid bg-purple small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Earthlight Gems & Minerals 2022</div></footer>
+
+<script>
+    function askName(){
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt("What is your name?");
+            //decide what to do
+            if (name ==="Kim Villines") {
+                nameParagraph.innerHTML = "Welcome back Kim!";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name +"! Here at Earthlight Gems & Minerals we take pride in getting personal. As a family owned company since 1988, we know what it means to value relationships and create life-long connections."
+            }
+        }
+
+        
+
+    const navbar = document.querySelector('.nav-fixed');
+window.onscroll = () => {
+    if (window.scrollY > 300) {
+        navbar.classList.add('nav-active');
+    } else {
+        navbar.classList.remove('nav-active');
+    }
+};
+
+
+</script>
+    
+</body>
+</html>
